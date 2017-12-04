@@ -2,9 +2,8 @@
 
 <?php
 
-get_template_part( 'post_types' );
-
-
+include('post_types.php');
+include('taxonomies.php');
 
 
 add_image_size( 'grid_thumbnail', 300, 300, true );

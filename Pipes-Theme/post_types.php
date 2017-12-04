@@ -40,7 +40,7 @@ function mat_dryck() {
         'description'           => __( 'Mat & dryck på sidan', 'text_domain' ),
         'labels'                => $labels,
         'supports'              => array( 'title', 'editor', 'thumbnail' ),
-        'taxonomies'            => array( 'category', 'post_tag' ),
+        'taxonomies'            => array( 'Kategori', 'Typ' ),
         'hierarchical'          => false,
         'public'                => true,
         'show_ui'               => true,

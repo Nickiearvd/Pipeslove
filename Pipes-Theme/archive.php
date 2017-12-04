@@ -1,53 +1,67 @@
 <?php get_header(); ?>
-<p>jdjdj</p>
+<div class="background">
+</div>
 <div class="postgrid">
 			<div class='navgrid'>
 				<?php
 					$terms = get_terms(array(
-						'taxonomy' => 'category',
+						'taxonomy' => 'Kategori',
 						'hide_empty' => true ));
 				?>
 				<ul>
-				<li><a href="/index.php">All</a></li>
-				<?php 
-					foreach ($terms as $value) { ?>
-			 		<li><a href="/mat_dryck/<?php echo $value->slug ?>">
-			 		<?php echo $value->name ?>
-					 </a></li>
+					<?php 
+						foreach ($terms as $value) { ?>
+				 		<li><a href="/Kategori/<?php echo $value->slug ?>">
+				 		<?php echo $value->name ?>
+						 </a></li>
 
-				<?php };?>
-			</ul>
+					<?php };?>
+				</ul>
 			</div>
 			<?php $args = array(
 			    'post_type'       =>  'mat_dryck',);
 
+				$matdryck_query = new WP_Query($args);
 			?>
-			<?php if (have_posts()){
-					while (have_posts()) : the_post();?>
-				
-						<ul class='imggrid'>
-							<div class='gridone'>
-							<li>
-								<?php $link = get_the_permalink();?>
-								<?php echo"<div class='img'><a href='$link'>";
-									?>
-									<div class='caption'>
-										<div class='blur'>
+			
+</div>
 
-									 		<?php echo "<h4><a class='text' href='$link'>";the_title();echo "</a></h4>"; ?>
-							
-									 		</div>
+			<style>
+			html{
+				position:relative;
+			}
+			.background{
+				background-color: grey;
+				height:100vh;
+				width:100%;
+				top:0;
+				position:absolute;
+				z-index: -10;
 
-										</div>
-								 		<div class='caption-text'></div>
-								 	</div>
-								</a></div>
-					
-							</li>
-						</ul>
-				
+			}
+			.postgrid{
+				z-index: 10;
+
+			}
+				.navgrid ul li{
+					list-style: none;
+					display: inline;
+					padding-right: 20px;
+					border:solid 5px brown;
+					text-align:center;
 
 
-		<?php endwhile; }?>
-		
-			</div>
+				}
+				.navgrid ul li a{
+					text-transform: uppercase;
+					font-family: helvetica;
+					text-decoration: none;
+					font-weight: lighter;
+					color:white;
+					height:20%;
+				}
+				.navgrid ul li a:hover{
+					color:brown;
+
+				}
+			</style>

@@ -34,7 +34,7 @@ function my_taxonomy() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
 	);
-	register_taxonomy( 'Kategori', array( 'mat_dryck' ), $args );
+	register_taxonomy( 'kategori', array( 'mat_dryck' ), $args );
 
 }
 add_action( 'init', 'my_taxonomy', 0 );
@@ -66,14 +66,14 @@ function my_taxonomy_typ() {
 	);
 	$args = array(
 		'labels'                     => $labels,
-		'hierarchical'               => false,
+		'hierarchical'               => true,
 		'public'                     => true,
 		'show_ui'                    => true,
 		'show_admin_column'          => true,
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
 	);
-	register_taxonomy( 'Typ', array( 'mat_dryck' ), $args );
+	register_taxonomy( 'typ', array( 'mat_dryck' ), $args );
 
 }
 add_action( 'init', 'my_taxonomy_typ', 0 );

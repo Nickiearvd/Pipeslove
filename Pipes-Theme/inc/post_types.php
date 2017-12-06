@@ -1,5 +1,3 @@
-
-
 <?php
 
 
@@ -175,6 +173,3 @@ function arbetare() {
 }
 add_action( 'init', 'arbetare', 0 );
  ?>
-
-
-

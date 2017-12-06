@@ -5,13 +5,13 @@
 			<div class='navgrid'>
 				<?php
 					$terms = get_terms(array(
-						'taxonomy' => 'Kategori',
+						'taxonomy' => 'kategori',
 						'hide_empty' => true ));
 				?>
 				<ul>
 					<?php 
 						foreach ($terms as $value) { ?>
-				 		<li><a href="/Kategori/<?php echo $value->slug ?>">
+				 		<li><a href="/kategori/<?php echo $value->slug ?>">
 				 		<?php echo $value->name ?>
 						 </a></li>
 
@@ -22,7 +22,30 @@
 			    'post_type'       =>  'mat_dryck',);
 
 				$matdryck_query = new WP_Query($args);
+
+
 			?>
+			<?php if (have_posts()){
+					while (have_posts()) : the_post();?>
+				
+						<ul class='imggrid'>
+						
+							<li>
+								<?php echo "<h4>";the_title();echo "</h4>"; ?>
+							
+									 		</div>
+
+										</div>
+								 		<div class='caption-text'></div>
+								 	</div>
+								</a></div>
+					
+							</li>
+						</ul>
+				
+
+
+		<?php endwhile; }?>
 			
 </div>
 

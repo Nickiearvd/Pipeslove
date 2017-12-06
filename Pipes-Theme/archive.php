@@ -2,30 +2,27 @@
 <div class="background">
 </div>
 <div class="postgrid">
-			<div class='navgrid'>
-				<?php
-					$terms = get_terms(array(
-						'taxonomy' => 'kategori',
-						'hide_empty' => true ));
-				?>
-				<ul>
-					<?php 
-						foreach ($terms as $value) { ?>
-				 		<li><a href="/kategori/<?php echo $value->slug ?>">
-				 		<?php echo $value->name ?>
-						 </a></li>
+	<div class='navgrid'>
+		<?php
+			$terms = get_terms(array(
+				'taxonomy' => 'kategori',
+				'hide_empty' => true ));
+		?>
+		<ul>
+			<?php 
+				foreach ($terms as $value) { ?>
+				 	<li><a href="/kategori/<?php echo $value->slug ?>">
+				 	<?php echo $value->name ?>
+					</a></li>
 
-					<?php };?>
-				</ul>
-			</div>
-			<?php $args = array(
-			    'post_type'       =>  'mat_dryck',);
-
-				$matdryck_query = new WP_Query($args);
-
-
-			?>
-			
+			<?php };?>
+		</ul>
+	</div>
+	<?php $args = array(
+		'post_type'       =>  'mat_dryck',);
+	?>
+	
+<?php get_footer(); ?>
 			
 </div>
 

@@ -25,27 +25,7 @@
 
 
 			?>
-			<?php if (have_posts()){
-					while (have_posts()) : the_post();?>
-				
-						<ul class='imggrid'>
-						
-							<li>
-								<?php echo "<h4>";the_title();echo "</h4>"; ?>
-							
-									 		</div>
-
-										</div>
-								 		<div class='caption-text'></div>
-								 	</div>
-								</a></div>
-					
-							</li>
-						</ul>
-				
-
-
-		<?php endwhile; }?>
+			
 			
 </div>
 

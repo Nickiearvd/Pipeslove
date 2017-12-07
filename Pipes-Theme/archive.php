@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <div class="background">
 </div>
+<div class='content'>
 <div class="postgrid">
 	<div class='navgrid'>
 		<?php
@@ -11,9 +12,11 @@
 		<ul>
 			<?php 
 				foreach ($terms as $value) { ?>
-				 	<li><a href="/kategori/<?php echo $value->slug ?>">
+				<a href="/kategori/<?php echo $value->slug ?>">
+					<div class='box'>
+				 	<li>
 				 	<?php echo $value->name ?>
-					</a></li>
+					</li></div></a>
 
 			<?php };?>
 		</ul>
@@ -21,17 +24,20 @@
 	<?php $args = array(
 		'post_type'       =>  'mat_dryck',);
 	?>
+</div>
+</div>
 	
 <?php get_footer(); ?>
-			
-</div>
 
-			<style>
+
+		<style>
 			html{
 				position:relative;
 			}
 			.background{
-				background-color: grey;
+				background: url(img/pipes1.png) no-repeat center center;
+				background-size: 100%;
+				background-color:grey;
 				height:100vh;
 				width:100%;
 				top:0;
@@ -39,28 +45,47 @@
 				z-index: -10;
 
 			}
+			.content{
+				height:500px;
+				margin-top: 150px;
+			}
 			.postgrid{
 				z-index: 10;
+
+			}
+			.navgrid ul {
+				margin:0 auto;
+				width:60%;
+				box-sizing: border-box;
+				padding:0;
+			}
+			.box{
+				width:200px;
+				height: 200px;
+				display: inline-block;
+				background-color: white;
+				text-align:center;
+				line-height: 200px;
+				box-sizing: border-box;
+				margin-right: 50px;
 
 			}
 				.navgrid ul li{
 					list-style: none;
 					display: inline;
-					padding-right: 20px;
-					border:solid 5px brown;
 					text-align:center;
 
 
 				}
-				.navgrid ul li a{
+				.navgrid a{
 					text-transform: uppercase;
 					font-family: helvetica;
 					text-decoration: none;
 					font-weight: lighter;
-					color:white;
-					height:20%;
+					color:black;
+					font-size: 20px;
 				}
-				.navgrid ul li a:hover{
+				.navgrid a:hover{
 					color:brown;
 
 				}

@@ -38,4 +38,8 @@
 
 
 }
+
+header{
+	height: 100vh;
+}
 </style>

@@ -75,7 +75,7 @@ h1{
 	color:brown;
 
 }
-dt{
+th{
 
 	font-size: 14px;
 	font-family: 'open sans',helvetica;
@@ -83,18 +83,19 @@ dt{
     text-align: left;
     width: 120px;
     display: inline;
+    padding-bottom: 10px;
 
 
 
 }
-dd{
+td{
 	text-align: right;
 
 }
 
-dl{
+table{
 	 margin: 60px auto;
-	width: 400px;
+	width: 350px;
 	text-align: left;
 	
 }

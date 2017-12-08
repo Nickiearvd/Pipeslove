@@ -1,4 +1,6 @@
-<?php get_header();?>
+<?php get_template_part( 'homeheader'); ?>
+
+
 <div id="content">
     <div id="post">
     	<div id="imageSide">
@@ -7,18 +9,7 @@
     	<div id="textSide">
         	
            <div id="open">
-           <h1><?php the_title() ?></h1>
-
-            <p> TEST TEST
-                <?php 
-                    if(have_posts()): 
-                        while ( have_posts()) :
-                            the_post(); 
-                            the_content();
-                        endwhile;
-                    endif; 
-                ?>       
-           </p>
+           
            <div id="rektangel2">
            <?php dynamic_sidebar( 'text' ); ?>
            </div>

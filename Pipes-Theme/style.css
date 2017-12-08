@@ -30,10 +30,10 @@ h1{
 	margin: 0;
 }
 
-#open{
+#open, #quiz{
 	width: 100%;
 	background-color: #fff;
-	margin:0 auto;
+	margin:30px auto;
 	overflow: hidden;
 	text-align: center;
 }
@@ -41,6 +41,39 @@ h1{
 	font-family: 'open sans',helvetica;
     font-weight: 400;
     font-size: 30px;
+}
+.kategorimeny ul {
+	margin:0 auto;
+	width:60%;
+	box-sizing: border-box;
+	padding:0;
+}
+
+.kategorimeny ul li{
+	list-style: none;
+	display: inline;
+	text-align:center;
+
+}
+.kategorimeny a{
+	text-transform: uppercase;
+	font-family: helvetica;
+	text-decoration: none;
+	font-weight: lighter;
+	color:black;
+	font-size: 20px;
+	width:200px;
+	height: 200px;
+	display: inline-block;
+	background-color: white;
+	text-align:center;
+	line-height: 200px;
+	box-sizing: border-box;
+	margin-right: 50px;
+}
+.kategorimeny a:hover{
+	color:brown;
+
 }
 dt{
 

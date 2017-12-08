@@ -21,6 +21,15 @@
            <?php dynamic_sidebar( 'text' ); ?>
            </div>
 
+           <div id="quiz">
+           <?php dynamic_sidebar( 'torsdag' ); ?>
+           </div>
+
+           <nav class="kategorimeny">
+            <?php wp_nav_menu( array( 'theme_location' => 'extra-meny' ) );?>
+      </nav>
+
+
        </div>
        
        </div>

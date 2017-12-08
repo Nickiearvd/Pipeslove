@@ -1,0 +1,1 @@
+<?php if (!defined('ABSPATH')) { exit; } ?> <!DOCTYPE html><html><head><meta charset="utf-8"><title>Flexi Instagram Feed Lite Canvas</title> <?php wp_print_scripts(['flexy-base-style', 'flexi-i-lite-canvas']); ?> <?php do_action('admin_print_styles'); ?> </head><body border="none"><div class="main-wrapper"><div class="flexy-social"></div></div></body></html>

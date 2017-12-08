@@ -1,13 +1,13 @@
 <?php get_header();?>
 <div id="content">
+<div class="background">
     <div id="post">
     	<div id="imageSide">
             <?php the_post_thumbnail();?>
         </div>
     	<div id="textSide">
-        	<h1><?php the_title() ?></h1>
 
-        	<p> Här kommer post att hamna
+        	<p> 
                 <?php 
                     if(have_posts()): 
                         while ( have_posts()) :
@@ -25,8 +25,7 @@
        </div>
    </div>
 </div>
-            
-
+</div>        
            
     <footer>
         <?php get_footer();?>

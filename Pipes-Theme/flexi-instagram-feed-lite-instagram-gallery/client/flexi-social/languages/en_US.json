@@ -1,0 +1,44 @@
+{
+    "just now": "just now",
+    "years": "years",
+    "months": "months",
+    "weeks": "weeks",
+    "days": "days",
+    "hours": "hours",
+    "minutes": "minutes",
+    "seconds": "seconds",
+
+    "last year": "last year",
+    "last month": "last month",
+    "last week": "last week",
+    "yesterday": "yesterday",
+    "1 hour ago": "1 hour ago",
+    "1 minute ago": "1 minute ago",
+
+    "%d years": "%d years",
+    "%d months": "%d months",
+    "%d weeks": "%d weeks",
+    "%d days": "%d days",
+    "%d hours": "%d hours",
+    "%d minutes": "%d minutes",
+
+    "next year": "next year",
+    "next month": "next month",
+    "next week": "next week",
+    "tomorrow": "tomorrow",
+    "1 hour from now": "1 hour from now",
+    "1 minute from now": "1 minute from now",
+    "1 second from now": "1 second from now",
+
+    "%d years from now": "%d years from now",
+    "%d months from now": "%d months from now",
+    "%d weeks from now": "%d weeks from now",
+    "%d days from now": "%d days from now",
+    "%d hours from now": "%d hours from now",
+    "%d minutes from now": "%d minutes from now",
+    "%d seconds from now": "%d seconds from now",
+
+    "Load More": "Load More",
+    "All": "All",
+    "Type to search...": "Type to search..."
+}

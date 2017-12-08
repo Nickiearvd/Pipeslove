@@ -1,14 +1,10 @@
 <?php get_header(); ?>
-<div class="background">
-</div>
-<<<<<<< HEAD
+
 <div id='content'>
-=======
-<div class='content'>
+<div class="background">
 <nav class="kategorimeny">
       		<?php wp_nav_menu( array( 'theme_location' => 'extra-meny' ) );?>
       </nav>
->>>>>>> dbbc29938425239e57c9e54eb74a2afbd0403ccc
 <div class="postgrid">
 	<div class='navgrid'>
 		<?php
@@ -33,6 +29,7 @@
 	?>
 </div>
 </div>
+</div>
 	
 <?php get_footer(); ?>
 
@@ -44,21 +41,26 @@
 			.background{
 				background: url(img/pipes1.png) no-repeat center center;
 				background-size: 100%;
-				background-color:grey;
+				background-color: rgba(0, 0, 0, 0.4);
 				height:100vh;
 				width:100%;
 				top:0;
-				position:absolute;
-				z-index: -10;
+			
+				z-index: 100;
 
 			}
-			.content{
-				height:500px;
-				margin-top: 150px;
+			#content{
+				background-color: black;
+
+				
 			}
 			.postgrid{
 				z-index: 10;
 
+			}
+
+			.kategorimeny{
+				padding-top:100px;
 			}
 			.kategorimeny ul {
 				margin:0 auto;
@@ -71,6 +73,7 @@
 					list-style: none;
 					display: inline;
 					text-align:center;
+					margin-right: 50px;
 
 				}
 				.kategorimeny a{
@@ -87,8 +90,14 @@
 					text-align:center;
 					line-height: 200px;
 					box-sizing: border-box;
-					margin-right: 50px;
+					
 				}
+				.kategorimeny ul li:last-child{
+					margin-right: 0px;
+
+				}
+
+
 				.kategorimeny a:hover{
 					color:brown;
 

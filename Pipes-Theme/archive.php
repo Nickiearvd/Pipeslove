@@ -1,7 +1,14 @@
 <?php get_header(); ?>
 <div class="background">
 </div>
+<<<<<<< HEAD
 <div id='content'>
+=======
+<div class='content'>
+<nav class="kategorimeny">
+      		<?php wp_nav_menu( array( 'theme_location' => 'extra-meny' ) );?>
+      </nav>
+>>>>>>> dbbc29938425239e57c9e54eb74a2afbd0403ccc
 <div class="postgrid">
 	<div class='navgrid'>
 		<?php
@@ -59,33 +66,30 @@
 				box-sizing: border-box;
 				padding:0;
 			}
-			.box{
-				width:200px;
-				height: 200px;
-				display: inline-block;
-				background-color: white;
-				text-align:center;
-				line-height: 200px;
-				box-sizing: border-box;
-				margin-right: 50px;
-
-			}
-				.navgrid ul li{
+		
+				.kategorimeny ul li{
 					list-style: none;
 					display: inline;
 					text-align:center;
 
-
 				}
-				.navgrid a{
+				.kategorimeny a{
 					text-transform: uppercase;
 					font-family: helvetica;
 					text-decoration: none;
 					font-weight: lighter;
 					color:black;
 					font-size: 20px;
+					width:200px;
+					height: 200px;
+					display: inline-block;
+					background-color: white;
+					text-align:center;
+					line-height: 200px;
+					box-sizing: border-box;
+					margin-right: 50px;
 				}
-				.navgrid a:hover{
+				.kategorimeny a:hover{
 					color:brown;
 
 				}

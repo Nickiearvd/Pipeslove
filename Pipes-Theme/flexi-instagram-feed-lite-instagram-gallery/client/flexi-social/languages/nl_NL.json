@@ -1,0 +1,44 @@
+{
+    "just now": "net nu",
+    "years": "jaar",
+    "months": "maanden",
+    "weeks": "weken",
+    "days": "dagen",
+    "hours": "uur",
+    "minutes": "notulen",
+    "seconds": "seconden",
+
+    "last year": "afgelopen jaar",
+    "last month": "vorige maand",
+    "last week": "vorige week",
+    "yesterday": "gisteren",
+    "1 hour ago": "1 uur geleden",
+    "1 minute ago": "1 uur geleden",
+
+    "%d years": "%d  jaar",
+    "%d months": "%d maanden",
+    "%d weeks": "%d weken",
+    "%d days": "%d dagen",
+    "%d hours": "%d uur",
+    "%d minutes": "%d notulen",
+
+    "next year": "volgend jaar",
+    "next month": "volgend maanden",
+    "next week": "volgend weken",
+    "tomorrow": "morgen",
+    "1 hour from now": "1 uur van nu",
+    "1 minute from now": "1 minuut van nu",
+    "1 second from now": "1 seconde van nu",
+
+    "%d years from now": "%d jaar vanaf nu",
+    "%d months from now": "%d maanden vanaf nu",
+    "%d weeks from now": "%d weken vanaf nu",
+    "%d days from now": "%d dagen vanaf nu",
+    "%d hours from now": "%d uur vanaf nu",
+    "%d minutes from now": "%d notulen vanaf nu",
+    "%d seconds from now": "%d seconden vanaf nu",
+
+    "Load More": "Meer laden",
+    "All": "Alle",
+    "Type to search...": "Typ om te zoeken..."
+}

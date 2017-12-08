@@ -1,0 +1,1 @@
+<?php if (!defined('ABSPATH')) { exit; } ?>  <?php $view::load('welcome'); ?> <?php $view::load('main'); ?> <?php $view::load('editor-popup'); ?> <?php $view::load('create-popup'); ?>

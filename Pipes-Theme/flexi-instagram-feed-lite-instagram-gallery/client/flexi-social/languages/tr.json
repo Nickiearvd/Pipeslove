@@ -1,0 +1,44 @@
+{
+    "just now": "az önce",
+    "years": "yıl",
+    "months": "aylar",
+    "weeks": "hafta",
+    "days": "günler",
+    "hours": "saat",
+    "minutes": "dakika",
+    "seconds": "saniye",
+
+    "last year": "geçen yıl",
+    "last month": "geçen ay",
+    "last week": "geçen hafta",
+    "yesterday": "dün",
+    "1 hour ago": "1 saat önce",
+    "1 minute ago": "1 dakika önce",
+
+    "%d years": "%d yıl",
+    "%d months": "%d aylar",
+    "%d weeks": "%d hafta",
+    "%d days": "%d günler",
+    "%d hours": "%d saat",
+    "%d minutes": "%d dakika",
+
+    "next year": "gelecek yıl",
+    "next month": "gelecek ay",
+    "next week": "gelecek hafta",
+    "tomorrow": "yarın",
+    "1 hour from now": "Bundan 1 saat",
+    "1 minute from now": "Şimdi 1 dakika",
+    "1 second from now": "Şimdi 1 saniye",
+
+    "%d years from now": "Şimdi %d yıl",
+    "%d months from now": "%d ay sonra",
+    "%d weeks from now": "%d hafta sonra",
+    "%d days from now": "%d günler sonra",
+    "%d hours from now": "%d saat sonra",
+    "%d minutes from now": "%d dakika sonra",
+    "%d seconds from now": "%d saniye sonra",
+
+    "Load More": "Daha fazla yükle",
+    "All": "hepsi",
+    "Type to search...": "Aramak için yazın..."
+}

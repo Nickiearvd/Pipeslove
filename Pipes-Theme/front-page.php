@@ -5,9 +5,11 @@
             <?php the_post_thumbnail();?>
         </div>
     	<div id="textSide">
-        	<h1><?php the_title() ?></h1>
+        	
+           <div id="open">
+           <h1><?php the_title() ?></h1>
 
-        	<p> TEST TEST
+            <p> TEST TEST
                 <?php 
                     if(have_posts()): 
                         while ( have_posts()) :
@@ -17,26 +19,34 @@
                     endif; 
                 ?>       
            </p>
-           <div id="open">
+           <div id="rektangel2">
            <?php dynamic_sidebar( 'text' ); ?>
+           </div>
            </div>
 
            <div id="quiz">
                <div id="rektangel">
                     <?php dynamic_sidebar( 'torsdag' ); ?>
                </div>
+               
            </div>
            <div id="open">
            <?php dynamic_sidebar( 'text' ); ?>
            </div>
            <div id="quiz">
                <div id="rektangel">
-                    <?php dynamic_sidebar( 'torsdag' ); ?>
+                    <h2>Kommande händelser</h2>
                </div>
+
            </div>
-           <nav class="kategorimeny">
-            <?php wp_nav_menu( array( 'theme_location' => 'extra-meny' ) );?>
-      </nav>
+           <div id="menyDiv">
+                   <nav class="kategorimeny">
+                    <?php wp_nav_menu( array( 'theme_location' => 'extra-meny' ) );?>
+                 </nav>
+             </div>
+      <div id="open">
+           <h2>GALLERY</h2>
+           </div>
 
 
        </div>

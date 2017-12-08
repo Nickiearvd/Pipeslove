@@ -31,12 +31,11 @@
 				height:100vh;
 				width:100%;
 				top:0;
-			
 				z-index: 100;
 
 			}
 			#content{
-				background-color: black;
+				background-color: #151515;
 			}
 
 			.kategorimeny{
@@ -67,7 +66,7 @@
 					width:200px;
 					height: 200px;
 					display: inline-block;
-					background-color: white;
+					background-color: rgba(255, 255, 255, 0.8);
 					text-align:center;
 					line-height: 200px;
 					box-sizing: border-box;
@@ -76,25 +75,40 @@
 
 				.kategorimeny ul li:last-child{
 					margin-right: 0px;
-					background:url(../../img/food.png) no-repeat center center;;
+					background:url(/img/mat.png) no-repeat center center;;
 				}
 				.kategorimeny li.current-menu-item a{
 					padding-bottom: 100px;
-	
+					background-color: rgb(255, 255, 255);
 
 				}
 
 				.kategorimeny a:hover{
 					color:brown;
 					transition: all 0.5s ease-in-out;
-			-moz-transition: all 0.5s ease-in-out;
-			-webkit-transition: all 0.5s ease-in-out;
-			-o-transition: all 0.5s ease-in-out;
+				-moz-transition: all 0.5s ease-in-out;
+				-webkit-transition: all 0.5s ease-in-out;
+				-o-transition: all 0.5s ease-in-out;
 
 				}
 				.listof{
-					background-color: white;
+					background-color: #f5f5f5;
 					width:749px;
 					margin: 0 auto ;
+					margin-top: 70px;
+					padding-bottom: 20px;
+				}
+				.listof ul{
+					margin:0;
+					padding-left:10px;
+
+
+				}
+				.listof ul li{
+					list-style: none;
+					display: inline;
+					text-align: left;
+					font-size:10px;
+					font-family: helvetica;
 				}
 			</style>

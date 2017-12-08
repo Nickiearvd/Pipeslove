@@ -19,11 +19,9 @@
 			.background{
 				background: url(img/pipes1.png) no-repeat center center;
 				background-size: 100%;
-				background-color: rgba(0, 0, 0, 0.7);
-				height:100vh;
+				background-color: rgba(21, 21, 21, 0.8);
 				width:100%;
 				top:0;
-			
 				z-index: 100;
 
 			}
@@ -39,6 +37,7 @@
 
 			.kategorimeny{
 				padding-top:100px;
+				padding-bottom:100px;
 			}
 			.kategorimeny ul {
 				margin:0 auto;
@@ -64,7 +63,7 @@
 					width:200px;
 					height: 200px;
 					display: inline-block;
-					background-color: white;
+					background-color: #f5f5f5;
 					text-align:center;
 					line-height: 200px;
 					box-sizing: border-box;
@@ -74,6 +73,10 @@
 				.kategorimeny ul li:last-child{
 					margin-right: 0px;
 					background:url(/img/mat.png) no-repeat center center;;
+				}
+				.kategorimeny ul li:first-child{
+					margin-left: 0px;
+					padding-left: 0;
 				}
 
 				.kategorimeny a:hover{

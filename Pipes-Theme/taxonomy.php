@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 <div id='content'>
+
 	<div class="background">
+
 		<nav class="kategorimeny">
       		<?php wp_nav_menu( array( 'theme_location' => 'extra-meny' ) );?>
       	</nav>
@@ -8,13 +10,16 @@
 		<h2> <?php single_cat_title() ?></h2>
 
 		<?php
+		if (is_tax('typ')){
+
+		}
 		if (is_tax( 'kategori', 'beeer' ) || is_tax( 'typ')){
 			$terms = get_terms(array(
 						'taxonomy' => 'typ',
 						'hide_empty' => true ));
-				?>
-				<ul>
-				<li><a href="/index.php">All</a></li>
+			?>
+			<ul class="typ">
+				<li><a href="/kategori/beeer/">All</a></li>
 				<?php 
 					foreach ($terms as $value) { ?>
 			 		<li><a href="/typ/<?php echo $value->slug ?>">
@@ -24,18 +29,20 @@
 
 				<?php };
 				};?>
-				</ul>
+			</ul>
 		
 					
 			<?php if (have_posts()){
 				while (have_posts()) : the_post();?>
 					<ul class='imggrid'>
-						<li>
-							<?php echo "<h3>";the_title();echo "</h3>"; ?>
-							<?php the_meta(""); 
-							 ?>
+						<div class="border1">
+							<li>
+								<?php echo "<h3>";the_title();echo "</h3>"; ?>
+								<?php the_meta(""); 
+								 ?>
 
-						</li>
+							</li>
+						</div>
 					</ul>
 				<?php endwhile; }?>
 		</div>
@@ -50,11 +57,11 @@
 			.background{
 				background: url(img/pipes1.png) no-repeat center center;
 				background-size: 100%;
-				background-color: rgba(0, 0, 0, 0.7);
-				height:100vh;
+				background-color: rgba(21, 21, 21, 0.8);
+				
 				width:100%;
 				top:0;
-				z-index: 100;
+	
 
 			}
 			#content{
@@ -63,6 +70,7 @@
 
 			.kategorimeny{
 				padding-top:100px;
+				padding-bottom:100px;
 			}
 
 			.kategorimeny ul {
@@ -118,14 +126,14 @@
 					background-color: #f5f5f5;
 					width:100%;
 					margin: 0 auto ;
-					margin-top: 70px;
-					padding-bottom: 20px;
+					margin-top: 0px;
+					padding-bottom: 70px;
 					padding-top: 10px;
 
 				}
-				.listof > ul{
+				.listof .imggrid{
 					margin:0;
-					padding-left:40px;
+					padding-left:270px;
 					text-align: left;
 
 
@@ -138,6 +146,13 @@
 					font-family: helvetica;
 					line-height: 26px;
 				}
+
+				.border1{
+					border-bottom: solid 1px lightgrey;
+					width:750px;
+					padding-top: 10px;
+					padding-bottom: 5px;
+				}
 				h3{
 					display: inline;
 				}
@@ -149,4 +164,31 @@
 				.post-meta:before{
 					content: " | ";
 				}
+				.typ{
+					margin-bottom: 20px;
+					padding:0;
+					margin-top: 0;
+					
+				}
+				h2{
+					padding-bottom: 0;
+				}
+
+				.typ li{
+					padding-right: 10px;
+					padding-left: 10px;
+					border-right: 1px solid;
+					text-align: center;
+				}
+				.typ li a{
+					color:brown;
+					text-transform: uppercase;
+				}
+				.typ li:last-child{
+					padding-right: 10px;
+					padding-left: 10px;
+					border-right: none;
+				}
+				
+
 			</style>

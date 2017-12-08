@@ -22,9 +22,18 @@
            </div>
 
            <div id="quiz">
-           <?php dynamic_sidebar( 'torsdag' ); ?>
+               <div id="rektangel">
+                    <?php dynamic_sidebar( 'torsdag' ); ?>
+               </div>
            </div>
-
+           <div id="open">
+           <?php dynamic_sidebar( 'text' ); ?>
+           </div>
+           <div id="quiz">
+               <div id="rektangel">
+                    <?php dynamic_sidebar( 'torsdag' ); ?>
+               </div>
+           </div>
            <nav class="kategorimeny">
             <?php wp_nav_menu( array( 'theme_location' => 'extra-meny' ) );?>
       </nav>

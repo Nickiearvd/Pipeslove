@@ -5,29 +5,7 @@
 <nav class="kategorimeny">
       		<?php wp_nav_menu( array( 'theme_location' => 'extra-meny' ) );?>
       </nav>
-<div class="postgrid">
-	<div class='navgrid'>
-		<?php
-			$terms = get_terms(array(
-				'taxonomy' => 'kategori',
-				'hide_empty' => true ));
-		?>
-		<ul>
-			<?php 
-				foreach ($terms as $value) { ?>
-				<a href="/kategori/<?php echo $value->slug ?>">
-					<div class='box'>
-				 	<li>
-				 	<?php echo $value->name ?>
-					</li></div></a>
 
-			<?php };?>
-		</ul>
-	</div>
-	<?php $args = array(
-		'post_type'       =>  'mat_dryck',);
-	?>
-</div>
 </div>
 </div>
 	

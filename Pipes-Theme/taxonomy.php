@@ -5,12 +5,12 @@
       		<?php wp_nav_menu( array( 'theme_location' => 'extra-meny' ) );?>
       	</nav>
 		<div class="listof">
-		<h1> <?php single_cat_title() ?></h1>
+		<h2> <?php single_cat_title() ?></h2>
 			<?php if (have_posts()){
 				while (have_posts()) : the_post();?>
 					<ul class='imggrid'>
 						<li>
-							<?php echo "<h2>";the_title();echo "</h2>"; ?>
+							<?php echo "<h3>";the_title();echo "</h3>"; ?>
 						</li>
 					</ul>
 				<?php endwhile; }?>

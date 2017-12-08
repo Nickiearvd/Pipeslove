@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="background">
 </div>
-<div class='content'>
+<div id='content'>
 <div class="postgrid">
 	<div class='navgrid'>
 		<?php

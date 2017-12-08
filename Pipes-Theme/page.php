@@ -17,6 +17,9 @@
                     endif; 
                 ?>       
            </p>
+           <div id="open">
+           <?php dynamic_sidebar( 'text' ); ?>
+           </div>
 
        </div>
        

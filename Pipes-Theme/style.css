@@ -29,6 +29,43 @@ h1{
 #textSide p{
 	margin: 0;
 }
+
+#open{
+	width: 100%;
+	background-color: #fff;
+	margin:0 auto;
+	overflow: hidden;
+	text-align: center;
+}
+.widget-title{
+	font-family: 'open sans',helvetica;
+    font-weight: 400;
+    font-size: 30px;
+}
+dt{
+
+	font-size: 14px;
+	font-family: 'open sans',helvetica;
+    font-weight: 400;
+    text-align: left;
+    width: 120px;
+    display: inline;
+
+
+
+}
+dd{
+	text-align: right;
+
+}
+
+dl{
+	 margin: 60px auto;
+	width: 400px;
+	text-align: left;
+	
+}
+
 #logo{
 	background: url(img/logo.png) no-repeat center center;
 	background-size: 100%;
@@ -41,6 +78,9 @@ h1{
 
 #content{
 	background-color: #ccc;
+	background: url(img/pipes2.jpg) fixed;
+	background-size: 100%;
+	height: 100vh;
 	margin:0;
 	text-align: center;
 }

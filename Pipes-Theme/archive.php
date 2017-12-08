@@ -19,7 +19,7 @@
 			.background{
 				background: url(img/pipes1.png) no-repeat center center;
 				background-size: 100%;
-				background-color: rgba(0, 0, 0, 0.4);
+				background-color: rgba(0, 0, 0, 0.7);
 				height:100vh;
 				width:100%;
 				top:0;

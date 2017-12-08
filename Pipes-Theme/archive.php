@@ -41,9 +41,10 @@
 			}
 			.kategorimeny ul {
 				margin:0 auto;
-				width:100%;
+				width:800px;
 				box-sizing: border-box;
 				padding:0;
+				border:1px solid white ;
 			}
 
 				.kategorimeny ul li{

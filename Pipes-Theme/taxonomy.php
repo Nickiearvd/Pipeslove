@@ -19,7 +19,7 @@
 						'hide_empty' => true ));
 			?>
 			<ul class="typ">
-				<li><a href="/kategori/beeer/">All</a></li>
+				<li><a href="/kategori/beeer/">AllA</a></li>
 				<?php 
 					foreach ($terms as $value) { ?>
 			 		<li><a href="/typ/<?php echo $value->slug ?>">
@@ -97,7 +97,7 @@
 					width:200px;
 					height: 200px;
 					display: inline-block;
-					background-color: rgba(255, 255, 255, 0.8);
+					background-color: rgba(255, 255, 255, 0.6);
 					text-align:center;
 					line-height: 200px;
 					box-sizing: border-box;
@@ -115,6 +115,7 @@
 				}
 
 				.kategorimeny a:hover{
+					background-color: rgba(255, 255, 255, 0.9);
 					color:brown;
 					transition: all 0.5s ease-in-out;
 				-moz-transition: all 0.5s ease-in-out;

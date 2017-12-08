@@ -6,18 +6,41 @@
       	</nav>
 		<div class="listof">
 		<h2> <?php single_cat_title() ?></h2>
+
+		<?php
+		if (is_tax( 'kategori', 'beeer' ) || is_tax( 'typ')){
+			$terms = get_terms(array(
+						'taxonomy' => 'typ',
+						'hide_empty' => true ));
+				?>
+				<ul>
+				<li><a href="/index.php">All</a></li>
+				<?php 
+					foreach ($terms as $value) { ?>
+			 		<li><a href="/typ/<?php echo $value->slug ?>">
+			 		<?php echo $value->name ?>
+					 </a></li>
+				
+
+				<?php };
+				};?>
+				</ul>
+		
+					
 			<?php if (have_posts()){
 				while (have_posts()) : the_post();?>
 					<ul class='imggrid'>
 						<li>
 							<?php echo "<h3>";the_title();echo "</h3>"; ?>
+							<?php the_meta(""); 
+							 ?>
+
 						</li>
 					</ul>
 				<?php endwhile; }?>
 		</div>
 	</div>
 </div>
-<style></style>
 
 <?php get_footer(); ?>
 <style>
@@ -27,7 +50,7 @@
 			.background{
 				background: url(img/pipes1.png) no-repeat center center;
 				background-size: 100%;
-				background-color: rgba(0, 0, 0, 0.4);
+				background-color: rgba(0, 0, 0, 0.7);
 				height:100vh;
 				width:100%;
 				top:0;
@@ -97,10 +120,13 @@
 					margin: 0 auto ;
 					margin-top: 70px;
 					padding-bottom: 20px;
+					padding-top: 10px;
+
 				}
-				.listof ul{
+				.listof > ul{
 					margin:0;
-					padding-left:10px;
+					padding-left:40px;
+					text-align: left;
 
 
 				}
@@ -108,7 +134,19 @@
 					list-style: none;
 					display: inline;
 					text-align: left;
-					font-size:10px;
+					font-size:16px;
 					font-family: helvetica;
+					line-height: 26px;
+				}
+				h3{
+					display: inline;
+				}
+				.post-meta{
+					display: inline;
+					padding-left: 5px;
+					font-weight: 300;
+				}
+				.post-meta:before{
+					content: " | ";
 				}
 			</style>

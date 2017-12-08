@@ -93,7 +93,7 @@
 				}
 				.listof{
 					background-color: #f5f5f5;
-					width:749px;
+					width:100%;
 					margin: 0 auto ;
 					margin-top: 70px;
 					padding-bottom: 20px;

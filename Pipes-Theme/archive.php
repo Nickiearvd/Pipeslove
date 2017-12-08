@@ -68,12 +68,12 @@
 				box-sizing: border-box;
 				padding:0;
 			}
-			
+
 				.kategorimeny ul li{
 					list-style: none;
 					display: inline;
 					text-align:center;
-					margin-right: 20px;
+					margin-right: 70px;
 				}
 
 				.kategorimeny a{
@@ -90,10 +90,12 @@
 					text-align:center;
 					line-height: 200px;
 					box-sizing: border-box;
+					margin-right: 0;
 				}
 
 				.kategorimeny ul li:last-child{
 					margin-right: 0px;
+					background:url(/img/mat.png) no-repeat center center;;
 				}
 
 				.kategorimeny a:hover{

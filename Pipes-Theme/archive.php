@@ -1,10 +1,14 @@
 <?php get_header(); ?>
 <div class="background">
 </div>
+<<<<<<< HEAD
+<div id='content'>
+=======
 <div class='content'>
 <nav class="kategorimeny">
       		<?php wp_nav_menu( array( 'theme_location' => 'extra-meny' ) );?>
       </nav>
+>>>>>>> dbbc29938425239e57c9e54eb74a2afbd0403ccc
 <div class="postgrid">
 	<div class='navgrid'>
 		<?php

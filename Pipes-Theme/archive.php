@@ -68,14 +68,14 @@
 				box-sizing: border-box;
 				padding:0;
 			}
-		
+			
 				.kategorimeny ul li{
 					list-style: none;
 					display: inline;
 					text-align:center;
-					margin-right: 50px;
-
+					margin-right: 20px;
 				}
+
 				.kategorimeny a{
 					text-transform: uppercase;
 					font-family: helvetica;
@@ -90,13 +90,11 @@
 					text-align:center;
 					line-height: 200px;
 					box-sizing: border-box;
-					
 				}
+
 				.kategorimeny ul li:last-child{
 					margin-right: 0px;
-
 				}
-
 
 				.kategorimeny a:hover{
 					color:brown;

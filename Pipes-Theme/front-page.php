@@ -31,7 +31,7 @@
                
            </div>
            <div id="open">
-           <?php dynamic_sidebar( 'text' ); ?>
+           <h3>Här kommer de kul saker</h3>
            </div>
            <div id="quiz">
            <h2>Kommande händelser</h2>

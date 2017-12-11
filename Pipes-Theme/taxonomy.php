@@ -49,9 +49,10 @@
 		</div>
 	</div>
 </div>
+<footer>
+	<?php get_footer(); ?>
+</footer>
 </body>
-
-<?php get_footer(); ?>
 <style>
 			html{
 				position:relative;

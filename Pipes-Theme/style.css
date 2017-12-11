@@ -3,35 +3,6 @@ Theme Name: Pipes Theme
 Author: [Julia Petersson, Anna Darner, Nickie Arvidsson]
 Description: A theme to present Pipes Jönköping
 */
-html{
-	margin: 0;
-	background: url(img/pipes2.jpg) no-repeat center center fixed;  
-	  -webkit-background-size: cover; 
-	  -moz-background-size: cover; 
-	  -o-background-size: cover; 
-	  background-size: cover;
-
-}
-body{
-	margin:0;
-	margin-top: 0px;
-	
-}
-header{
-	margin: 0;
-	padding:0;
-	background-color: #151515;
-	overflow: hidden;
-
-}
-.header2{
-	background: url(img/pipesheader.jpg) fixed;
-	background-size: 100%;
-	text-align: center;
-	margin: 0 auto;
-
-
-}
 
 .background {
 	
@@ -40,74 +11,13 @@ header{
 	z-index: 100;
 }
 
-h1{
-	margin: 0;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 40px;
-	font-family: 'Forum',helvetica;
-    font-weight: 800;
 
-}
-h2, .widget-title{
-	font-family: 'Forum',helvetica;
-    font-size: 30px;
-    padding-bottom: 30px;
-}
-h3{
-	font-family: 'Forum',helvetica;
-    font-size: 30px;
-    padding-bottom: 30px;
-    text-decoration: none;
-}
-a{
-	text-decoration: none;
-}
-h4{
-	font-family: 'Forum',helvetica;
-    font-size: 22px;
-    color: #fff;
-    padding-bottom: 30px;
-    display: inline;
-}
 
-.tid{
-	display: inline;
-	color: #fff;
-	margin-left: 40px;
-	font-size: 22px;
-}
-.datum{
-	display: inline;
-	color: #151515;
-	background-color: #f5f5f5;
-	padding: 15px;
-	margin-right: 40px;
-	height: 40px;
-
-}
-.mer{
-	display: inline;
-	color: #fff;
-	float: right;
-	position: absolute;
-	right: 5px;
-	bottom:0;
-}
-.event{
-	float: left;
-}
 #textSide p{
 	margin: 0;
 }
 
-#open{
-	width: 100%;
-	background-color: #f5f5f5;
-	margin:0px auto;
-	overflow: hidden;
-	text-align: center;
-}
+
 #quiz, #menyDiv{
 	width: 100%;
 	background: rgba(21,21,21, 0.9);
@@ -137,6 +47,7 @@ h4{
 	height: 40px;
 
 }
+
 p{
 	
 	font-size: 14px;
@@ -146,7 +57,8 @@ p{
 
 
 #menyHome{
-	background-color: #151515;
+	background-color: rgba(21,21,21, 0.9);
+
 }
 
 th{
@@ -180,17 +92,85 @@ table{
 	text-align: left;
 	
 }
-#adress section .textwidget p {
-	color: #fff;
-	text-transform: uppercase;
-	letter-spacing: 10px;
-	font-size: 20px;
-	font-family: 'open sans',helvetica;
-    font-weight: 400;
-    padding-bottom: 73px;
-    margin-top: -50px;
-    line-height: 40px;
 
+
+
+
+#content{
+	background-size: 100%;
+	margin:0;
+	text-align: center;
+	z-index: 1;
+
+}
+
+
+#menyDiv{
+	display: block;
+	height: 300px;
+	overflow: hidden;
+
+}
+
+
+
+/********************************************************************************************************/
+/*********************************************PARAMETERS*************************************************/
+
+html{
+	margin: 0;
+	background: url(img/pipes2.jpg) no-repeat center center fixed;  
+	  -webkit-background-size: cover; 
+	  -moz-background-size: cover; 
+	  -o-background-size: cover; 
+	  background-size: cover;
+
+}
+
+body{
+	margin:0px;
+	margin-top: -45px;
+}
+
+h1{
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 40px;
+	font-family: 'Forum',helvetica;
+    font-weight: 800;
+
+}
+h2, .widget-title{
+	font-family: 'Forum',helvetica;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+h3{
+	font-family: 'Forum',helvetica;
+    font-size: 30px;
+    padding-bottom: 30px;
+    text-decoration: none;
+}
+a{
+	text-decoration: none;
+}
+h4{
+	font-family: 'Forum',helvetica;
+    font-size: 22px;
+    color: #fff;
+    padding-bottom: 30px;
+    display: inline;
+}
+
+/********************************************************************************************************/
+/*********************************************Header*****************************************************/
+
+header{
+	margin: 0;
+	padding:0;
+	background-color: #151515;
+	overflow: hidden;
 }
 #logo{
 	background: url(img/logo.png) no-repeat center center;
@@ -201,43 +181,56 @@ table{
 	height: 100px;
 	margin-left: 20px;
 }
-#logo2{
-	background: url(img/logo.png) no-repeat center center;
-	background-size: 100%;
-	margin: 0 auto;
-	display: block;
-	width: 500px;
-	height: 80vh;
 
+#showmenu {
+	float: right;
+	width: 50px;
+	height:50px;
+	padding: 10px 0;
+	background: url(img/menu.png) no-repeat center center;
+	z-index: 100;
+	margin-right:20px;
+	background-size:80%;
+	transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
 }
-
-#content{
-	background-size: 100%;
-	margin:0;
-	text-align: center;
-	z-index: 1;
-
+#showmenu.open{
+	background-color: black;
+	background: url(img/closemenu.png) no-repeat center center;
+	background-size:80%;
+	transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+}
+.navigation{
+	width:100%;
+	background-color: rgba(21,21,21, 0.7);
+	z-index: 1000;
+	overflow: hidden;
+	position: fixed;
 }
 
 #menu-huvudmeny{
-	margin: 0;
-	display: inline;
-	float: right;
-	margin-right: 20px;
-	margin-top: 30px;
-	background-color: #151515;
-
+	margin: 0px auto;
+	padding: 20px 0;
+	height:100vh;
+	padding-top: 10px;
+	text-align: center;
+	display: none;
+	float: none;
+	clear: both;
 }
-#menyDiv{
+
+#menu-huvudmeny.open {
 	display: block;
-	height: 300px;
-	overflow: hidden;
-
-}
+} 
 
 #menu-huvudmeny li{
 	margin: 0;
-	display: inline;
+	display: block;
 	padding: 18px 30px;
 }
 
@@ -245,16 +238,95 @@ table{
 	color: #fff;
 	text-transform: uppercase;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 30px;
 	font-family: 'open sans',helvetica;
     font-weight: 300;
-
 }
 
 #menu-huvudmeny li.current-menu-item a {
-border-bottom: solid 1px #FFF;
+border-bottom: solid 3px #FFF;
 padding-bottom: 1px;
 }
+
+/********************************************************************************************************/
+/*********************************************HeaderHomePage*********************************************/
+
+.header2{
+	background: url(img/pipesheader.jpg) no-repeat center center fixed;  
+	  -webkit-background-size: cover; 
+	  -moz-background-size: cover; 
+	  -o-background-size: cover; 
+	  background-size: cover;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#logo2{
+	background: url(img/logo.png) no-repeat center center;
+	background-size: 100%;
+	margin: 0 auto;
+	display: block;
+	width: 300px;
+	height: 80vh;
+}
+
+#adress section .textwidget p {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	font-size: 18px;
+	font-family: 'open sans',helvetica;
+    font-weight: 400;
+    padding-bottom: 73px;
+    margin-top: -50px;
+    line-height: 40px;
+    margin-bottom:0;
+}
+
+.blackoverlay{
+	width:100%;
+	background-color: rgba(21,21,21, 0.7);
+}
+
+/********************************************************************************************************/
+/*********************************************HomePage***************************************************/
+
+#open{
+	width: 100%;
+	background-color: #f5f5f5;
+	margin:0px auto;
+	overflow: hidden;
+	text-align: center;
+}
+.tid{
+	display: inline;
+	color: #fff;
+	margin-left: 40px;
+	font-size: 22px;
+}
+.datum{
+	display: inline;
+	color: #151515;
+	background-color: #f5f5f5;
+	padding: 15px;
+	margin-right: 40px;
+	height: 40px;
+
+}
+.mer{
+	display: inline;
+	color: #fff;
+	float: right;
+	position: absolute;
+	right: 5px;
+	bottom:0;
+}
+.event{
+	float: left;
+}
+
+/********************************************************************************************************/
+/*********************************************Footer*****************************************************/
 
 #footer{
 	background-color: #151515;
@@ -264,4 +336,80 @@ padding-bottom: 1px;
 	font-family: 'open sans',helvetica;
     font-weight: 300;
     padding: 20px;
+}
+
+/********************************************************************************************************/
+/********************************************************************************************************/
+/********************************************************************************************************/
+/********************************************************************************************************/
+
+@media (min-width: 600px) {
+	body{
+		margin-top: -45px;
+	}
+
+	#logo2{
+		width: 400px;
+		height: 90vh;
+	}
+
+	#showmenu {
+		display: none;
+	}
+
+	#menu-huvudmeny{
+		margin: 0;
+		display: inline;
+		float: right;
+		background-color: rgba(21,21,21, 0.7);
+		height:100%;
+		width:100%;
+		text-align: right;
+		margin-right: 10px;
+	}
+
+	#menyDiv{
+		display: block;
+		height: 300px;
+	}
+
+	#menu-huvudmeny li{
+		display: inline;
+		padding: 18px 20px;
+	}
+
+	#menu-huvudmeny li a{
+		font-size: 18px;
+
+	}
+
+	#adress section .textwidget p {
+		color: #fff;
+		text-transform: uppercase;
+		letter-spacing: 9px;
+		font-size: 20px;
+	    padding-bottom: 73px;
+	    margin-top: -50px;
+	    line-height: 40px;
+	    margin-bottom:0;
+	}
+
+}
+
+/********************************************************************************************************/
+/********************************************************************************************************/
+/********************************************************************************************************/
+/********************************************************************************************************/
+@media (min-width: 780px) {
+	body{
+		margin-top: -30px;
+	}
+
+}
+
+@media (min-width: 900px) {
+	body{
+		margin-top: -30px;
+	}
+
 }

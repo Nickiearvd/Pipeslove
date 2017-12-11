@@ -165,7 +165,8 @@
 				}
 				.listof .imggrid{
 					margin:0;
-					padding-left:270px;
+					padding-left:20px;
+
 					text-align: left;
 
 

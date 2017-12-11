@@ -353,9 +353,11 @@ padding-bottom: 1px;
     width:100%;
     height:300px;
 }
-.links{
-	
+
+footer .widget-title {
+	display:none;
 }
+
 .links a {
 	height:50px;
 	width:50px;

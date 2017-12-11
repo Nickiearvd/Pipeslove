@@ -2,8 +2,9 @@
 <div id='content'>
 
 	<div class="background">
-
+		<div id="menytopper"></div>
 		<nav class="kategorimeny">
+		<h1>Meny</h1>
       		<?php wp_nav_menu( array( 'theme_location' => 'extra-meny' ) );?>
       	</nav>
 		<div class="listof">
@@ -55,74 +56,103 @@
 				position:relative;
 			}
 			.background{
-				background: url(img/pipes1.png) no-repeat center center;
 				background-size: 100%;
-				background-color: rgba(21, 21, 21, 0.8);
-				
+				background-color: #f5f5f5;
 				width:100%;
 				top:0;
-	
+				z-index: 100;
 
 			}
 			#content{
+				
+				
+			}
+			h1{
+				color: rgba(255, 255, 255, 0.9);
+				margin-top: 80px;
+			}
+			#menytopper{
 				background-color: #151515;
-			}
+				height: 70px;
 
-			.kategorimeny{
-				padding-top:100px;
-				padding-bottom:100px;
 			}
+			.postgrid{
+				z-index: 10;
 
-			.kategorimeny ul {
-				margin:0 auto;
-				width:100%;
-				box-sizing: border-box;
-				padding:0;
 			}
 			
+			.kategorimeny{
+
+				
+				background: url(https://www.pixeltopic.com/files/2017/12/hjvpqcuputxsntb.jpg) no-repeat;
+				filter: grayscale(50%);
+				background-size: 100%;
+				padding-top:10px;
+				padding-bottom:100px;
+			}
+			.kategorimeny ul {
+				width:90%;
+				max-width: 500px;
+				box-sizing: border-box;
+				padding:0;
+				margin: 30px auto 0 auto;
+				overflow: hidden;
+
+			}
+
 				.kategorimeny ul li{
 					list-style: none;
-					display: inline;
-					text-align:center;
-					margin-right: 70px;
+					text-align: center;
+					margin: 0 auto 18px auto;
+					height: 35px;
+					width: 280px;
+					background-color: rgba(255, 255, 255, 0.9);
+					-moz-transition: all 1s;
+					-webkit-transition: all 1s;
+					transition: all 1s;
+				
 				}
-
+				
+				.kategorimeny ul li:hover, .kategorimeny ul li:first-child:hover, .kategorimeny ul li:last-child:hover{
+					background: #fff;
+					cursor: pointer;
+					-moz-transition: all 0.3s;
+					-webkit-transition: all 0.3s;
+					transition: all 0.3s;
+					box-sizing: border-box;
+				}
 				.kategorimeny a{
 					text-transform: uppercase;
-					font-family: helvetica;
+					font-family: 'open sans', helvetica;
 					text-decoration: none;
-					font-weight: lighter;
-					color:black;
-					font-size: 20px;
-					width:200px;
-					height: 200px;
-					display: inline-block;
-					background-color: rgba(255, 255, 255, 0.6);
-					text-align:center;
-					line-height: 200px;
-					box-sizing: border-box;
-					margin-right: 0;
+					font-weight: 300;
+					color: rgba(0,0,0, 0.8);
+					line-height: 35px;
+					font-size: 18px;
+					padding: 0;
+
 				}
 
 				.kategorimeny ul li:last-child{
-					margin-right: 0px;
-					background:url(/img/mat.png) no-repeat center center;;
+					
 				}
-				.kategorimeny li.current-menu-item a{
-					padding-bottom: 100px;
-					background-color: rgb(255, 255, 255);
-
+				.kategorimeny ul li:first-child{
+				
+					
 				}
 
 				.kategorimeny a:hover{
-					background-color: rgba(255, 255, 255, 0.9);
-					color:brown;
-					transition: all 0.5s ease-in-out;
-				-moz-transition: all 0.5s ease-in-out;
-				-webkit-transition: all 0.5s ease-in-out;
-				-o-transition: all 0.5s ease-in-out;
+					
+					text-decoration: underline;
+					
+				}
+				.kategorimeny li.current-menu-item a{
+					
+					
 
 				}
+
+				
 				.listof{
 					background-color: #f5f5f5;
 					width:100%;

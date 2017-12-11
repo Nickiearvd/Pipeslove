@@ -42,39 +42,60 @@
 			}
 			.kategorimeny ul {
 				width:100%;
+				max-width: 500px;
 				box-sizing: border-box;
 				padding:0;
+				margin-top: 100px;
 				overflow: hidden;
+
 			}
 
 				.kategorimeny ul li{
 					list-style: none;
-					text-align: left;
+					text-align: center;
+
 					margin-bottom: 20px;
-					background:url(http://assets.stickpng.com/thumbs/580b57fbd9996e24bc43c091.png) no-repeat left;
-					background-size: 100px;
-					height: 200px;
-					background-color: #212121;
+					background:url(https://www.n0.se/f/f/b8589_mat2.png) no-repeat left;
+					background-size: 90px;
+					height: 110px;
+
+					background-color: #151515;
+					-moz-transition: all 1s;
+					-webkit-transition: all 1s;
+					transition: all 1s;
 				
 				}
-
+				
+				.kategorimeny ul li:hover, .kategorimeny ul li:first-child:hover, .kategorimeny ul li:last-child:hover{
+					background-color: #000;
+					cursor: pointer;
+					-moz-transition: all 1s;
+					-webkit-transition: all 1s;
+					transition: all 1s;
+				}
 				.kategorimeny a{
 					text-transform: uppercase;
 					font-family: helvetica;
 					text-decoration: none;
 					font-weight: lighter;
 					color:white;
-					
-					font-size: 40px;
+					line-height: 110px;
+					font-size: 30px;
 					padding: 0;
 
 				}
 
 				.kategorimeny ul li:last-child{
+					background:url(https://www.n0.se/f/f/1346e_beer2.png) no-repeat left;
+					background-size: 90px;
+					background-color: #151515;
 				}
 				.kategorimeny ul li:first-child{
 					margin-left: 0px;
 					padding-left: 0;
+					background:url(https://www.n0.se/f/f/20b06_drinks.png) no-repeat left;
+					background-size: 90px;
+					background-color: #151515;
 				}
 
 				.kategorimeny a:hover{

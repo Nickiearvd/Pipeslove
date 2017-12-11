@@ -23,10 +23,10 @@
     </div>
 </div>        
            
-    <footer>
+</body>
+<footer>
         <?php get_footer();?>
     </footer>
-</body>
 
 </html>
     

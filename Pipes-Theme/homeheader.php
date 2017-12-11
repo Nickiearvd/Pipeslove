@@ -15,14 +15,14 @@
 
 <header>
     <div class="header2">
+    	<div id="menyHome">
+	      <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) );?>
+	    </div>
 	    <div id="logo2"></div>
 	    <div id="adress">
 	      <?php dynamic_sidebar( 'page-sidebar' ); ?>
 	    </div>
 
-	    <div id="menyHome">
-	      <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) );?>
-	    </div>
     </div>
 
 </header>
@@ -39,7 +39,7 @@
 
 }
 
-header{
-	height: 100vh;
+.header2{
+	
 }
 </style>

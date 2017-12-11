@@ -208,11 +208,7 @@ table{
 
 #content{
 	background-color: #ccc;
-	background: url(img/homepic.jpg) no-repeat center center fixed;  
-	  -webkit-background-size: cover; 
-	  -moz-background-size: cover; 
-	  -o-background-size: cover; 
-	  background-size: cover;
+	background: url(img/pipes2.jpg) fixed;
 	background-size: 100%;
 	margin:0;
 	text-align: center;

@@ -29,15 +29,16 @@
 			}
 			#content{
 				
-
 				
+			}
+			h1{
+				color: rgba(255, 255, 255, 0.9);
+				margin-top: 80px;
 			}
 			#menytopper{
 				background-color: #151515;
-				background: url(https://www.pixeltopic.com/files/2017/12/fpwbhmoebgbwivq.jpg) no-repeat;
-				background-size: 100%;
-				height: 300px;
-				margin-top: 100px;
+				height: 70px;
+
 			}
 			.postgrid{
 				z-index: 10;
@@ -45,15 +46,20 @@
 			}
 			
 			.kategorimeny{
-				padding-top:100px;
+
+				
+				background: url(https://www.pixeltopic.com/files/2017/12/hjvpqcuputxsntb.jpg) no-repeat;
+				filter: grayscale(50%);
+				background-size: 100%;
+				padding-top:10px;
 				padding-bottom:100px;
 			}
 			.kategorimeny ul {
-				width:100%;
+				width:90%;
 				max-width: 500px;
 				box-sizing: border-box;
 				padding:0;
-				margin: 50px auto 0 auto;
+				margin: 30px auto 0 auto;
 				overflow: hidden;
 
 			}
@@ -61,9 +67,10 @@
 				.kategorimeny ul li{
 					list-style: none;
 					text-align: center;
-					margin: 0 auto 10px auto;
-					height: 80px;
-					background-color: #f5f5f5;
+					margin: 0 auto 18px auto;
+					height: 35px;
+					width: 280px;
+					background-color: rgba(255, 255, 255, 0.9);
 					-moz-transition: all 1s;
 					-webkit-transition: all 1s;
 					transition: all 1s;
@@ -71,20 +78,21 @@
 				}
 				
 				.kategorimeny ul li:hover, .kategorimeny ul li:first-child:hover, .kategorimeny ul li:last-child:hover{
-					background-color: #fff;
+					background: #fff;
 					cursor: pointer;
-					-moz-transition: all 1s;
-					-webkit-transition: all 1s;
-					transition: all 1s;
+					-moz-transition: all 0.3s;
+					-webkit-transition: all 0.3s;
+					transition: all 0.3s;
+					box-sizing: border-box;
 				}
 				.kategorimeny a{
 					text-transform: uppercase;
-					font-family: helvetica;
+					font-family: 'open sans', helvetica;
 					text-decoration: none;
-					font-weight: lighter;
-					color:#151515;
-					line-height: 80px;
-					font-size: 25px;
+					font-weight: 300;
+					color: rgba(0,0,0, 0.8);
+					line-height: 35px;
+					font-size: 18px;
 					padding: 0;
 
 				}
@@ -93,14 +101,13 @@
 					
 				}
 				.kategorimeny ul li:first-child{
-					margin-left: 0px;
-					padding-left: 0;
+				
 					
 				}
 
 				.kategorimeny a:hover{
-					border-bottom: 2px solid #151515; 
-					padding-bottom: px;
+					
+					text-decoration: underline;
 					
 				}
 			</style>

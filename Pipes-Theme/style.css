@@ -3,36 +3,105 @@ Theme Name: Pipes Theme
 Author: [Julia Petersson, Anna Darner, Nickie Arvidsson]
 Description: A theme to present Pipes Jönköping
 */
-html{
-	margin: 0;
-
-}
-body{
-	margin:0;
-	margin-top: -30px;
-	background-color: #151515;
-}
-header{
-	margin: 0;
-	padding:0;
-	background-color: #151515;
-	overflow: hidden;
-
-}
-.header2{
-	background: url(img/pipesheader.jpg) fixed;
-	background-size: 100%;
-	text-align: center;
-	margin: 0 auto;
-
-
-}
 
 .background {
-	background-color: rgba(21, 21, 21, 0.8);
+	
 	width: 100%;
 	height: 100%;
 	z-index: 100;
+}
+
+
+
+#textSide p{
+	margin: 0;
+}
+
+
+
+
+p{
+	
+	font-size: 14px;
+	font-family: 'open sans',helvetica;
+    font-weight: 400;
+}
+
+
+#menyHome{
+	background-color: rgba(21,21,21, 0.9);
+
+}
+
+th{
+
+	font-size: 14px;
+	font-family: 'Forum',helvetica;
+    font-weight: 400;
+    text-align: left;
+    width: 120px;
+    display: inline;
+    padding-bottom: 10px;
+
+
+
+}
+td{
+	text-align: right;
+	font-size: 14px;
+	font-family: 'Forum',helvetica;
+
+}
+
+.op-row.op-row-day.highlighted th, .op-row.op-row-day.highlighted td{
+	color: #000;
+	text-decoration: underline;
+}
+
+table{
+	 margin: 20px auto;
+	width: 350px;
+	text-align: left;
+	
+}
+
+
+
+
+#content{
+	background-size: 100%;
+	margin:0;
+	text-align: center;
+	z-index: 1;
+
+}
+
+
+#menyDiv{
+	display: block;
+	height: 300px;
+	overflow: hidden;
+
+}
+
+
+
+/********************************************************************************************************/
+/*********************************************PARAMETERS*************************************************/
+
+html{
+	margin: 0;
+	background: url(img/pipes2.jpg) no-repeat center center fixed;  
+	  -webkit-background-size: cover; 
+	  -moz-background-size: cover; 
+	  -o-background-size: cover; 
+	  background-size: cover;
+
+}
+
+body{
+	margin:0px;
+	margin-top: -45px;
 }
 
 h1{
@@ -66,6 +135,141 @@ h4{
     display: inline;
 }
 
+/********************************************************************************************************/
+/*********************************************Header*****************************************************/
+
+header{
+	margin: 0;
+	padding:0;
+	background-color: #151515;
+	overflow: hidden;
+}
+#logo{
+	background: url(img/logo.png) no-repeat center center;
+	background-size: 100%;
+	float: left;
+	display: inline;
+	width: 100px;
+	height: 100px;
+	margin-left: 20px;
+}
+
+#showmenu {
+	float: right;
+	width: 50px;
+	height:50px;
+	padding: 10px 0;
+	background: url(img/menu.png) no-repeat center center;
+	z-index: 100;
+	margin-right:20px;
+	background-size:80%;
+	transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+}
+#showmenu.open{
+	background-color: black;
+	background: url(img/closemenu.png) no-repeat center center;
+	background-size:80%;
+	transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+}
+.navigation{
+	width:100%;
+	background-color: rgba(21,21,21, 0.7);
+	z-index: 1000;
+	overflow: hidden;
+	position: fixed;
+}
+
+#menu-huvudmeny{
+	margin: 0px auto;
+	padding: 20px 0;
+	height:100vh;
+	padding-top: 10px;
+	text-align: center;
+	display: none;
+	float: none;
+	clear: both;
+}
+
+#menu-huvudmeny.open {
+	display: block;
+} 
+
+#menu-huvudmeny li{
+	margin: 0;
+	display: block;
+	padding: 18px 30px;
+}
+
+#menu-huvudmeny li a{
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 30px;
+	font-family: 'open sans',helvetica;
+    font-weight: 300;
+}
+
+#menu-huvudmeny li.current-menu-item a {
+border-bottom: solid 3px #FFF;
+padding-bottom: 1px;
+}
+
+/********************************************************************************************************/
+/*********************************************HeaderHomePage*********************************************/
+
+.header2{
+	background: url(img/pipesheader.jpg) no-repeat center center fixed;  
+	  -webkit-background-size: cover; 
+	  -moz-background-size: cover; 
+	  -o-background-size: cover; 
+	  background-size: cover;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#logo2{
+	background: url(img/PIPESLOGGA.png) no-repeat center center;
+	background-size: 100%;
+	margin: 0 auto;
+	display: block;
+	width: 300px;
+	height: 80vh;
+}
+
+#adress section .textwidget p {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	font-size: 18px;
+	font-family: 'open sans',helvetica;
+    font-weight: 400;
+    padding-bottom: 73px;
+    margin-top: -50px;
+    line-height: 40px;
+    margin-bottom:0;
+}
+
+.blackoverlay{
+	width:100%;
+	background-color: rgba(21,21,21, 0.7);
+}
+
+/********************************************************************************************************/
+/*********************************************HomePage***************************************************/
+
+#open{
+	width: 100%;
+	background-color: #f5f5f5;
+	margin:0px auto;
+	overflow: hidden;
+	text-align: center;
+}
 .tid{
 	display: inline;
 	color: #fff;
@@ -92,17 +296,6 @@ h4{
 .event{
 	float: left;
 }
-#textSide p{
-	margin: 0;
-}
-
-#open{
-	width: 100%;
-	background-color: #f5f5f5;
-	margin:0px auto;
-	overflow: hidden;
-	text-align: center;
-}
 #quiz, #menyDiv{
 	width: 100%;
 	background: rgba(21,21,21, 0.9);
@@ -110,7 +303,7 @@ h4{
 	color: #f5f5f5;
 }
 #rektangel{
-	width: 700px;
+	width: 60%;
 	border: 3px solid #f5f5f5;
 	margin: 0 auto;
 	padding: 30px;
@@ -132,176 +325,9 @@ h4{
 	height: 40px;
 
 }
-p{
-	
-	font-size: 14px;
-	font-family: 'open sans',helvetica;
-    font-weight: 400;
-}
 
-
-.kategorimeny{
-padding-top:100px;
-
-}
-#menyHome{
-	background-color: #151515;
-}
-.kategorimeny ul {
-	margin:0 auto;
-	width:100%;
-	box-sizing: border-box;
-	padding:0;
-}
-
-.kategorimeny ul li{
-	list-style: none;
-	display: inline;
-	text-align:center;
-	margin-right: 70px;
-}
-
-.kategorimeny a{
-	text-transform: uppercase;
-	font-family: helvetica;
-	text-decoration: none;
-	font-weight: lighter;
-	color:black;
-	font-size: 20px;
-	width:200px;
-	height: 200px;
-	display: inline-block;
-	background-color: white;
-	text-align:center;
-	line-height: 200px;
-	box-sizing: border-box;
-	margin-right: 0;
-}
-
-.kategorimeny ul li:last-child{
-	margin-right: 0px;
-	background:url(../../img/food.png) no-repeat center center;;
-}
-.kategorimeny li.current-menu-item a{
-	padding-bottom: 100px;
-}
-
-.kategorimeny a:hover{
-	color:brown;
-	transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-webkit-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-
-}
-th{
-
-	font-size: 14px;
-	font-family: 'Forum',helvetica;
-    font-weight: 400;
-    text-align: left;
-    width: 120px;
-    display: inline;
-    padding-bottom: 10px;
-
-
-
-}
-td{
-	text-align: right;
-	font-size: 14px;
-	font-family: 'Forum',helvetica;
-
-}
-
-.op-row.op-row-day.highlighted th, .op-row.op-row-day.highlighted td{
-	color: #000;
-	text-decoration: underline;
-}
-
-table{
-	 margin: 20px auto;
-	width: 350px;
-	text-align: left;
-	
-}
-#adress section .textwidget p {
-	color: #fff;
-	text-transform: uppercase;
-	letter-spacing: 10px;
-	font-size: 20px;
-	font-family: 'open sans',helvetica;
-    font-weight: 400;
-    padding-bottom: 73px;
-    margin-top: -50px;
-    line-height: 40px;
-
-}
-#logo{
-	background: url(img/logo.png) no-repeat center center;
-	background-size: 100%;
-	float: left;
-	display: inline;
-	width: 100px;
-	height: 100px;
-	margin-left: 20px;
-}
-#logo2{
-	background: url(img/logo.png) no-repeat center center;
-	background-size: 100%;
-	margin: 0 auto;
-	display: block;
-	width: 500px;
-	height: 80vh;
-
-}
-
-#content{
-	background-color: #ccc;
-	background: url(img/pipes2.jpg) fixed;
-	background-size: 100%;
-	margin:0;
-	text-align: center;
-	z-index: 1;
-
-}
-
-#menu-huvudmeny{
-	margin: 0;
-	display: inline;
-	float: right;
-	margin-right: 20px;
-	margin-top: 30px;
-	background-color: #151515;
-
-}
-#menyDiv{
-	display: block;
-	height: 300px;
-	overflow: hidden;
-
-}
-
-#menu-huvudmeny li{
-	margin: 0;
-	display: inline;
-	padding: 18px 30px;
-}
-
-#menu-huvudmeny li a{
-	color: #fff;
-	text-transform: uppercase;
-	text-decoration: none;
-	font-size: 20px;
-	font-family: 'open sans',helvetica;
-    font-weight: 300;
-
-}
-
-#menu-huvudmeny li.current-menu-item a {
-border-bottom: solid 1px #FFF;
-padding-bottom: 1px;
-}
+/********************************************************************************************************/
+/*********************************************Footer*****************************************************/
 
 #footer{
 	background-color: #151515;
@@ -311,4 +337,80 @@ padding-bottom: 1px;
 	font-family: 'open sans',helvetica;
     font-weight: 300;
     padding: 20px;
+}
+
+/********************************************************************************************************/
+/********************************************************************************************************/
+/********************************************************************************************************/
+/********************************************************************************************************/
+
+@media (min-width: 600px) {
+	body{
+		margin-top: -45px;
+	}
+
+	#logo2{
+		width: 400px;
+		height: 90vh;
+	}
+
+	#showmenu {
+		display: none;
+	}
+
+	#menu-huvudmeny{
+		margin: 0;
+		display: inline;
+		float: right;
+		background-color: rgba(21,21,21, 0.7);
+		height:100%;
+		width:100%;
+		text-align: right;
+		margin-right: 10px;
+	}
+
+	#menyDiv{
+		display: block;
+		height: 300px;
+	}
+
+	#menu-huvudmeny li{
+		display: inline;
+		padding: 18px 20px;
+	}
+
+	#menu-huvudmeny li a{
+		font-size: 18px;
+
+	}
+
+	#adress section .textwidget p {
+		color: #fff;
+		text-transform: uppercase;
+		letter-spacing: 9px;
+		font-size: 20px;
+	    padding-bottom: 73px;
+	    margin-top: -50px;
+	    line-height: 40px;
+	    margin-bottom:0;
+	}
+
+}
+
+/********************************************************************************************************/
+/********************************************************************************************************/
+/********************************************************************************************************/
+/********************************************************************************************************/
+@media (min-width: 780px) {
+	body{
+		margin-top: -30px;
+	}
+
+}
+
+@media (min-width: 900px) {
+	body{
+		margin-top: -30px;
+	}
+
 }

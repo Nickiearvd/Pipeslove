@@ -2,7 +2,9 @@
 
 <div id='content'>
 <div class="background">
+<div id="menytopper"></div>
 <nav class="kategorimeny">
+<h1>Meny</h1>
 			
       		<?php wp_nav_menu( array( 'theme_location' => 'extra-meny' ) );?>
       </nav>
@@ -18,9 +20,8 @@
 				position:relative;
 			}
 			.background{
-
 				background-size: 100%;
-				background-color: rgba(21, 21, 21, 0.8);
+				background-color: #f5f5f5;
 				width:100%;
 				top:0;
 				z-index: 100;
@@ -30,6 +31,13 @@
 				
 
 				
+			}
+			#menytopper{
+				background-color: #151515;
+				background: url(https://www.pixeltopic.com/files/2017/12/fpwbhmoebgbwivq.jpg) no-repeat;
+				background-size: 100%;
+				height: 300px;
+				margin-top: 100px;
 			}
 			.postgrid{
 				z-index: 10;
@@ -45,7 +53,7 @@
 				max-width: 500px;
 				box-sizing: border-box;
 				padding:0;
-				margin-top: 100px;
+				margin: 50px auto 0 auto;
 				overflow: hidden;
 
 			}
@@ -53,13 +61,9 @@
 				.kategorimeny ul li{
 					list-style: none;
 					text-align: center;
-
-					margin-bottom: 20px;
-					background:url(https://www.n0.se/f/f/b8589_mat2.png) no-repeat left;
-					background-size: 90px;
-					height: 110px;
-
-					background-color: #151515;
+					margin: 0 auto 10px auto;
+					height: 80px;
+					background-color: #f5f5f5;
 					-moz-transition: all 1s;
 					-webkit-transition: all 1s;
 					transition: all 1s;
@@ -67,7 +71,7 @@
 				}
 				
 				.kategorimeny ul li:hover, .kategorimeny ul li:first-child:hover, .kategorimeny ul li:last-child:hover{
-					background-color: #000;
+					background-color: #fff;
 					cursor: pointer;
 					-moz-transition: all 1s;
 					-webkit-transition: all 1s;
@@ -78,28 +82,25 @@
 					font-family: helvetica;
 					text-decoration: none;
 					font-weight: lighter;
-					color:white;
-					line-height: 110px;
-					font-size: 30px;
+					color:#151515;
+					line-height: 80px;
+					font-size: 25px;
 					padding: 0;
 
 				}
 
 				.kategorimeny ul li:last-child{
-					background:url(https://www.n0.se/f/f/1346e_beer2.png) no-repeat left;
-					background-size: 90px;
-					background-color: #151515;
+					
 				}
 				.kategorimeny ul li:first-child{
 					margin-left: 0px;
 					padding-left: 0;
-					background:url(https://www.n0.se/f/f/20b06_drinks.png) no-repeat left;
-					background-size: 90px;
-					background-color: #151515;
+					
 				}
 
 				.kategorimeny a:hover{
-					color:brown;
-
+					border-bottom: 2px solid #151515; 
+					padding-bottom: px;
+					
 				}
 			</style>

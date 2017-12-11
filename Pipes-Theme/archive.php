@@ -3,7 +3,7 @@
 <div id='content'>
 <div class="background">
 <nav class="kategorimeny">
-			<div class="icon">..</div>
+			
       		<?php wp_nav_menu( array( 'theme_location' => 'extra-meny' ) );?>
       </nav>
 
@@ -35,35 +35,27 @@
 				z-index: 10;
 
 			}
-			.icon{
-				background:url(http://assets.stickpng.com/thumbs/580b57fbd9996e24bc43c091.png) no-repeat center;
-				background-size: 50%;
-				width: 200px;
-				height: 200px;
-				background-color: #212121;
-				border: solid #fff;
-				box-sizing: border-box;
-				
-				float: center;
-				margin:0 auto;
-			}
+			
 			.kategorimeny{
 				padding-top:100px;
 				padding-bottom:100px;
 			}
 			.kategorimeny ul {
-				margin:0 auto;
 				width:100%;
 				box-sizing: border-box;
 				padding:0;
+				overflow: hidden;
 			}
 
 				.kategorimeny ul li{
 					list-style: none;
-					display: block;
-					text-align:center;
+					text-align: left;
 					margin-bottom: 20px;
-
+					background:url(http://assets.stickpng.com/thumbs/580b57fbd9996e24bc43c091.png) no-repeat left;
+					background-size: 100px;
+					height: 200px;
+					background-color: #212121;
+				
 				}
 
 				.kategorimeny a{
@@ -71,16 +63,11 @@
 					font-family: helvetica;
 					text-decoration: none;
 					font-weight: lighter;
-					color:black;
-					background-color: #f5f5f5;
-					font-size: 20px;
-					width:100%;
-					display: inline-block;
-					box-sizing: border-box;
-					margin-right: 0;
-					margin-top: 200px;
-					padding: 20px 0;
-					float: center;
+					color:white;
+					
+					font-size: 40px;
+					padding: 0;
+
 				}
 
 				.kategorimeny ul li:last-child{

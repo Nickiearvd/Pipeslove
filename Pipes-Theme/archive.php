@@ -17,7 +17,7 @@
 				position:relative;
 			}
 			.background{
-				background: url(img/pipes1.png) no-repeat center center;
+
 				background-size: 100%;
 				background-color: rgba(21, 21, 21, 0.8);
 				width:100%;
@@ -26,7 +26,7 @@
 
 			}
 			#content{
-				background-color: black;
+				
 
 				
 			}
@@ -41,17 +41,16 @@
 			}
 			.kategorimeny ul {
 				margin:0 auto;
-				width:800px;
+				width:100%;
 				box-sizing: border-box;
 				padding:0;
-				border:1px solid white ;
 			}
 
 				.kategorimeny ul li{
 					list-style: none;
-					display: inline;
+					display: block;
 					text-align:center;
-					margin-right: 70px;
+					margin-bottom: 20px;
 				}
 
 				.kategorimeny a{
@@ -64,7 +63,8 @@
 					width:200px;
 					height: 200px;
 					display: inline-block;
-					background-color: #f5f5f5;
+					background:url(http://assets.stickpng.com/thumbs/580b57fbd9996e24bc43c091.png);
+					background-size: 100%;
 					text-align:center;
 					line-height: 200px;
 					box-sizing: border-box;
@@ -72,7 +72,6 @@
 				}
 
 				.kategorimeny ul li:last-child{
-					margin-right: 0px;
 					background:url(/img/mat.png) no-repeat center center;;
 				}
 				.kategorimeny ul li:first-child{

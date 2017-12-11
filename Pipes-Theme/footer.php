@@ -3,7 +3,6 @@
 <div id="footer">
 	<p class="fName"><?php bloginfo('name') ?></p>
 	<div class="links">
-	blalalal
 		<a href="" >
 			<div class="facebook">
 			</div>

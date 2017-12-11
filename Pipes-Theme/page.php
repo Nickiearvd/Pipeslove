@@ -7,7 +7,6 @@
                     <?php the_post_thumbnail();?>
                 </div>
             	<div id="textSide">
-
                 	<p> 
                         <?php 
                             if(have_posts()): 
@@ -18,8 +17,6 @@
                             endif; 
                         ?>       
                    </p>
-               </div>
-               
                </div>
             </div>
        </div>

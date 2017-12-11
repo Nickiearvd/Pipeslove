@@ -32,9 +32,9 @@
                     <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
                <div id="rektangel3">
                       <a  class="event" href="<?php the_permalink(); ?>">
-                      <h3 class="datum"><?php the_field('datum'); ?> </h3>
+                      <p class="datum"><?php the_field('datum'); ?> </p>
                         
-                        <h4><?php the_title(); ?></h4> 
+                        <a class="eventtitle" href="<?php the_permalink(); ?>"><?php the_title(); ?></a> 
                          
                          <p class="mer">mer info...</p>
                       </a>

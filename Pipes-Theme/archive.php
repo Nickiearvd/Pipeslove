@@ -3,6 +3,7 @@
 <div id='content'>
 <div class="background">
 <nav class="kategorimeny">
+			<div class="icon">..</div>
       		<?php wp_nav_menu( array( 'theme_location' => 'extra-meny' ) );?>
       </nav>
 
@@ -34,7 +35,18 @@
 				z-index: 10;
 
 			}
-
+			.icon{
+				background:url(http://assets.stickpng.com/thumbs/580b57fbd9996e24bc43c091.png) no-repeat center;
+				background-size: 50%;
+				width: 200px;
+				height: 200px;
+				background-color: #212121;
+				border: solid #fff;
+				box-sizing: border-box;
+				
+				float: center;
+				margin:0 auto;
+			}
 			.kategorimeny{
 				padding-top:100px;
 				padding-bottom:100px;
@@ -51,6 +63,7 @@
 					display: block;
 					text-align:center;
 					margin-bottom: 20px;
+
 				}
 
 				.kategorimeny a{
@@ -59,20 +72,18 @@
 					text-decoration: none;
 					font-weight: lighter;
 					color:black;
+					background-color: #f5f5f5;
 					font-size: 20px;
-					width:200px;
-					height: 200px;
+					width:100%;
 					display: inline-block;
-					background:url(http://assets.stickpng.com/thumbs/580b57fbd9996e24bc43c091.png);
-					background-size: 100%;
-					text-align:center;
-					line-height: 200px;
 					box-sizing: border-box;
 					margin-right: 0;
+					margin-top: 200px;
+					padding: 20px 0;
+					float: center;
 				}
 
 				.kategorimeny ul li:last-child{
-					background:url(/img/mat.png) no-repeat center center;;
 				}
 				.kategorimeny ul li:first-child{
 					margin-left: 0px;

@@ -28,10 +28,7 @@ p{
 }
 
 
-#menyHome{
-	background-color: rgba(21,21,21, 0.9);
 
-}
 
 th{
 
@@ -144,6 +141,10 @@ header{
 	background-color: #151515;
 	overflow: hidden;
 }
+
+.headerMenu{
+	background-color: rgba(21,21,21, 0.9);
+}
 #logo{
 	background: url(img/logo.png) no-repeat center center;
 	background-size: 100%;
@@ -179,7 +180,7 @@ header{
 }
 .navigation{
 	width:100%;
-	background-color: rgba(21,21,21, 0.7);
+	background-color: rgba(21,21,21, 0.8);
 	z-index: 1000;
 	overflow: hidden;
 	position: fixed;
@@ -222,7 +223,10 @@ padding-bottom: 1px;
 
 /********************************************************************************************************/
 /*********************************************HeaderHomePage*********************************************/
+#menyHome{
+	background-color: rgba(21,21,21, 0.9);
 
+}
 .header2{
 	background: url(img/pipesheader.jpg) no-repeat center center fixed;  
 	  -webkit-background-size: cover; 
@@ -303,7 +307,7 @@ padding-bottom: 1px;
 	color: #f5f5f5;
 }
 #rektangel{
-	width: 60%;
+	width: 80%;
 	border: 3px solid #f5f5f5;
 	margin: 0 auto;
 	padding: 30px;

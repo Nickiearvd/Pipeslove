@@ -21,10 +21,14 @@
                </div>
                
            </div>
-           <div id="open">
-           <h3>Här kommer de kul saker</h3>
-           </div>
-           <div id="quiz">
+           
+            <div id="menyDiv">
+                <nav class="kategorimeny">
+                  <?php wp_nav_menu( array( 'theme_location' => 'extra-meny' ) );?>
+                </nav>
+            </div>
+          
+           <div id="kommandeevent">
            <h2>Kommande händelser</h2>
            <?php $wpb_all_query = new WP_Query(array('post_type'=>'event', 'post_status'=>'publish', 'paged'=> get_query_var('paged'),   
                       'posts_per_page' => 5,
@@ -45,13 +49,8 @@
                <?php endwhile; ?>
 
            </div>
-           <div id="menyDiv">
-                <nav class="kategorimeny">
-                  <?php wp_nav_menu( array( 'theme_location' => 'extra-meny' ) );?>
-                </nav>
-            </div>
-            <div id="open">
-               <h2>GALLERY</h2>
+          
+            <div id="instacontainer">
                <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/48e76f3e71fa5640b28ed33a9fa77631.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
 
             </div>

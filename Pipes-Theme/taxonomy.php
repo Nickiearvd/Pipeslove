@@ -10,9 +10,6 @@
 		<div class="listof">
 	
 		<?php
-		if (is_tax('typ')){
-
-		}
 		if (is_tax( 'kategori', 'beeer' ) || is_tax( 'typ')){
 			$terms = get_terms(array(
 						'taxonomy' => 'typ',
@@ -42,6 +39,7 @@
 								  <p> <?php the_field("pris"); 
 								 ?> kr</p><p> <?php the_field("volym"); 
 								 ?> cl</p>
+								<?php echo get_the_term_list( $post->ID, 'typ', ' ', ', ', '' ); ?> 
 
 							</li>
 						</div>
@@ -105,11 +103,12 @@
 					font-size:16px;
 					font-family: helvetica;
 					line-height: 26px;
+				
 				}
 
 				.border1{
 					border-bottom: solid 1px lightgrey;
-					width:750px;
+					
 					padding-top: 10px;
 					padding-bottom: 5px;
 				}
@@ -118,37 +117,41 @@
 				}
 				.post-meta{
 					display: inline;
-					padding-left: 5px;
 					font-weight: 300;
 				}
 				.post-meta:before{
 					content: " | ";
+
 				}
 				.typ{
 					margin-bottom: 20px;
-					padding:0;
+					color:white;
+					padding:5px;
+					font-weight: 200;
 					margin-top: 0;
-					background-color: black;
+					background-color: rgba(0, 0, 0, 0.9);
+					text-align: left;
+					padding-left: 10px;
 					
 				}
-				h2{
-					padding-bottom: 0;
-				}
-
+		
 				.typ li{
-					padding-right: 10px;
-					padding-left: 10px;
+					padding-right: 20px;
+					padding-left: 20px;
 					border-right: 1px solid;
-					text-align: center;
 				}
 				.typ li a{
-					color:brown;
+
+					color:white;
 					text-transform: uppercase;
 				}
 				.typ li:last-child{
-					padding-right: 10px;
-					padding-left: 10px;
+					padding-right: 0px;
 					border-right: none;
+				}
+				.typ li:first-child{
+					padding-left: 0px;
+					
 				}
 
 				@media (min-width: 900px) {

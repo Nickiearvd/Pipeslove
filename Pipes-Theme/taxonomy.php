@@ -39,11 +39,10 @@
 						<div class="border1">
 							<li>
 								<?php echo "<h3>";the_title();echo "</h3>"; ?>
-								<?php the_meta(""); 
-								 ?>
 
 								  <p> <?php the_field("pris"); 
-								 ?>kr </p>
+								 ?> kr</p><p> <?php the_field("volym"); 
+								 ?> cl</p>
 
 							</li>
 						</div>

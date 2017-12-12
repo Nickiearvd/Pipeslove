@@ -49,28 +49,13 @@
 
 			
 				.h1spec{
-					font-size: 40px;
+					font-size: 45px;
 				}
 
-				.kategorimeny ul li{
-					width:700px;
-					display: inline;
-					border-bottom: none;
-					border-right: 1px solid;
-					padding:10px 100px;
-
-				}
-				.kategorimeny ul li:last-child{
-					border-right: none;
-				}
 				#menu-extrameny{
 					padding-top:60px;
 					padding-bottom:60px;
 				}
 
-				.kategorimeny ul li:hover {
-					padding:10px 150px;
-					
-				}
 			}
 			</style>

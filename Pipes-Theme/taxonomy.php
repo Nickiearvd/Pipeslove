@@ -10,7 +10,7 @@
 		<div class="listof">
 	
 		<?php
-		if (is_tax( 'kategori', 'beeer' ) || is_tax( 'typ')){
+		if (is_tax( 'kategori', 'beer' ) || is_tax( 'typ')){
 			$terms = get_terms(array(
 						'taxonomy' => 'typ',
 						'hide_empty' => true ));

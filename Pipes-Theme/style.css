@@ -221,7 +221,7 @@ header{
 }
 
 #menu-huvudmeny li.current-menu-item a {
-border-bottom: solid 3px #FFF;
+border-bottom: solid 1px #FFF;
 padding-bottom: 1px;
 }
 
@@ -495,7 +495,7 @@ footer a {
 
 @media (min-width: 900px) {
 	#menu-huvudmeny li a{
-		font-size: 25px;
+		font-size: 18px;
 	}
 	#rektangel{
 

@@ -529,6 +529,8 @@ footer a {
 	}
 	#menu-huvudmeny{
 		margin: 0;
+		padding: 0;
+		line-height: 70px;
 		display: inline;
 		float: right;
 		background-color: rgba(21,21,21, 0.7);

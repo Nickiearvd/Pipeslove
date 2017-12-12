@@ -48,7 +48,8 @@ td{
 
 .op-row.op-row-day.highlighted th, .op-row.op-row-day.highlighted td{
 	color: #000;
-	text-decoration: underline;
+	
+	font-weight: 600;
 }
 
 table{
@@ -119,7 +120,7 @@ overflow: hidden;
 	
 }
 
-.kategorimeny a:hover{
+.kategorimeny ul li:hover a{
 	font-weight: 500;
 	font-size: 25px;
 	-moz-transition: all 0.5s;
@@ -175,6 +176,7 @@ h1{
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 40px;
+	font-weight: 300;
 	font-family: 'open sans',helvetica;
     font-weight: 800;
 
@@ -360,9 +362,9 @@ padding-bottom: 1px;
 	background-color: #f5f5f5;
 	padding: 15px;
 	margin-right: 40px;
-	height: 40px;
+	height: 60px;
 	font-size: 18px;
-	line-height: 40px;
+	line-height: 60px;
 	font-weight: 900px;
 
 }
@@ -376,12 +378,16 @@ padding-bottom: 1px;
 }
 .event{
 	float: left;
+	margin: 0;
+	padding:0;
+	background: #f5f5f5;
+	height: 60px;
 }
 .eventtitle{
 	text-decoration: none;
 	color:#f5f5f5;
 	font-family: 'open sans',helvetica;
-	line-height: 40px;
+	line-height: 60px;
 	float:left;
 	margin-left: 10px;
 }
@@ -395,7 +401,7 @@ padding-bottom: 1px;
 #kommandeevent{
 	width: 100%;
 	background: rgba(21,21,21, 0.9);
-	padding: 20px 0 40px 0;
+	padding: 20px 0 50px 0;
 	color: #f5f5f5;
 	margin: 0;
 }
@@ -421,12 +427,12 @@ padding-bottom: 1px;
 #rektangel3{
 	width: 90%;
 	border: 3px solid #f5f5f5;
-	margin: 30px auto;
+	margin: 10px auto;
 	padding: 0px;
 	display: block;
 	overflow: hidden;
 	position: relative;
-	height: 40px;
+	height: 60px;
 	box-sizing: border-box;
 
 }
@@ -523,6 +529,8 @@ footer a {
 	}
 	#menu-huvudmeny{
 		margin: 0;
+		padding: 0;
+		line-height: 70px;
 		display: inline;
 		float: right;
 		background-color: rgba(21,21,21, 0.7);
@@ -587,7 +595,7 @@ footer a {
 		display: block;
 		overflow: hidden;
 		position: relative;
-		height: 40px;
+		height: 60px;
 		box-sizing: border-box;
 
 	}

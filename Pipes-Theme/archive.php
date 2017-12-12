@@ -67,5 +67,10 @@
 					padding-top:60px;
 					padding-bottom:60px;
 				}
+
+				.kategorimeny ul li:hover {
+					padding:10px 150px;
+					
+				}
 			}
 			</style>

@@ -28,7 +28,7 @@ p{
 th{
 
 	font-size: 14px;
-	font-family: 'Forum',helvetica;
+	font-family: 'open sans',helvetica;
     font-weight: 400;
     text-align: left;
     width: 120px;
@@ -41,7 +41,7 @@ th{
 td{
 	text-align: right;
 	font-size: 14px;
-	font-family: 'Forum',helvetica;
+	font-family: 'open sans',helvetica;
 
 }
 
@@ -57,18 +57,21 @@ table{
 	
 }
 
-
-
-
-#menyDiv{
-	display: block;
-	height: 300px;
+.kategorimeny{
+	width: 100%;
+	background-color: #f5f5f5;
+	margin:0px auto;
 	overflow: hidden;
-
+	height: 400px;
+	text-align: center;
 }
 
 
-
+#instacontainer{
+	width: 100%;
+	margin: 0;
+	background: #151515;
+}
 /********************************************************************************************************/
 /*********************************************PARAMETERS*************************************************/
 
@@ -102,17 +105,19 @@ h1{
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 40px;
-	font-family: 'Forum',helvetica;
+	font-family: 'open sans',helvetica;
     font-weight: 800;
 
 }
 h2, .widget-title{
-	font-family: 'Forum',helvetica;
+	font-family: 'open sans',helvetica;
     font-size: 30px;
-    padding-bottom: 30px;
+    font-weight: 300;
+    padding: 0 0 30px 0;
+    margin: 0;
 }
 h3{
-	font-family: 'Forum',helvetica;
+	font-family: 'open sans',helvetica;
     font-size: 30px;
     padding-bottom: 30px;
     text-decoration: none;
@@ -121,7 +126,7 @@ a{
 	text-decoration: none;
 }
 h4{
-	font-family: 'Forum',helvetica;
+	font-family: 'open sans',helvetica;
     font-size: 22px;
     color: #fff;
     padding-bottom: 30px;
@@ -216,7 +221,7 @@ header{
 }
 
 #menu-huvudmeny li.current-menu-item a {
-border-bottom: solid 3px #FFF;
+border-bottom: solid 1px #FFF;
 padding-bottom: 1px;
 }
 
@@ -266,7 +271,7 @@ padding-bottom: 1px;
 /********************************************************************************************************/
 /*********************************************HomePage***************************************************/
 
-#open{
+#open {
 	width: 100%;
 	background-color: #f5f5f5;
 	margin:0px auto;
@@ -286,13 +291,13 @@ padding-bottom: 1px;
 	padding: 15px;
 	margin-right: 40px;
 	height: 40px;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 40px;
 	font-weight: 900px;
 
 }
 .mer{
-	display: inline;
+	display: none;
 	color: #fff;
 	float: right;
 	position: absolute;
@@ -310,17 +315,34 @@ padding-bottom: 1px;
 	float:left;
 	margin-left: 10px;
 }
-#quiz, #menyDiv{
+#quiz{
 	width: 100%;
 	background: rgba(21,21,21, 0.9);
 	padding: 20px 0;
 	color: #f5f5f5;
+	margin: 0;
+}
+#kommandeevent{
+	width: 100%;
+	background: rgba(21,21,21, 0.9);
+	padding: 20px 0 40px 0;
+	color: #f5f5f5;
+	margin: 0;
+}
+#menyDiv{
+	width: 100%;
+
+	background: rgba(21,21,21, 0.9);
+	padding: 0px 0;
+	color: #f5f5f5;
+	margin: 0;
 }
 #rektangel{
-	width: 80%;
+	width: 90%;
 	border: 3px solid #f5f5f5;
 	margin: 0 auto;
 	padding: 30px;
+	box-sizing: border-box;
 
 }
 #rektangel2{
@@ -331,12 +353,13 @@ padding-bottom: 1px;
 #rektangel3{
 	width: 90%;
 	border: 3px solid #f5f5f5;
-	margin: 15px auto;
+	margin: 30px auto;
 	padding: 0px;
 	display: block;
 	overflow: hidden;
 	position: relative;
 	height: 40px;
+	box-sizing: border-box;
 
 }
 /********************************************************************************************************/
@@ -426,7 +449,10 @@ footer a {
 	#showmenu {
 		display: none;
 	}
-
+	.mer{
+	
+		display: inline;
+	}
 	#menu-huvudmeny{
 		margin: 0;
 		display: inline;
@@ -438,10 +464,7 @@ footer a {
 		margin-right: 10px;
 	}
 
-	#menyDiv{
-		display: block;
-		height: 300px;
-	}
+	
 
 	#menu-huvudmeny li{
 		display: inline;
@@ -472,13 +495,15 @@ footer a {
 
 @media (min-width: 900px) {
 	#menu-huvudmeny li a{
-		font-size: 25px;
+		font-size: 18px;
 	}
 	#rektangel{
-	width: 700px;
+
+	max-width: 800px;
 	border: 3px solid #f5f5f5;
 	margin: 0 auto;
 	padding: 30px;
+	box-sizing: border-box;
 
 	}
 	#rektangel2{
@@ -487,7 +512,7 @@ footer a {
 		padding: 5px;
 	}
 	#rektangel3{
-		width: 760px;
+		max-width: 800px;
 		border: 3px solid #f5f5f5;
 		margin: 15px auto;
 		padding: 0px;
@@ -495,6 +520,7 @@ footer a {
 		overflow: hidden;
 		position: relative;
 		height: 40px;
+		box-sizing: border-box;
 
 	}
 	#logo{

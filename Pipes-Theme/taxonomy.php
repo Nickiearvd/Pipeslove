@@ -42,6 +42,9 @@
 								<?php the_meta(""); 
 								 ?>
 
+								  <p> <?php the_field("pris"); 
+								 ?>kr </p>
+
 							</li>
 						</div>
 					</ul>

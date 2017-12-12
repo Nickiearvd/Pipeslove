@@ -5,7 +5,9 @@ Description: A theme to present Pipes Jönköping
 */
 
 
-
+.textwidget p a{
+	color:white;
+}
 			
 
 

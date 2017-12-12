@@ -10,9 +10,9 @@
         	
            <div id="open">
            
-           <div id="rektangel2">
-           <?php dynamic_sidebar( 'text' ); ?>
-           </div>
+             <div id="rektangel2">
+             <?php dynamic_sidebar( 'text' ); ?>
+             </div>
            </div>
 
            <div id="quiz">

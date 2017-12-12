@@ -16,7 +16,7 @@
 						'hide_empty' => true ));
 			?>
 			<ul class="typ">
-				<li><a href="/kategori/beeer/">AllA</a></li>
+				<li><a href="/kategori/beer/">AllA</a></li>
 				<?php 
 					foreach ($terms as $value) { ?>
 			 		<li><a href="/typ/<?php echo $value->slug ?>">

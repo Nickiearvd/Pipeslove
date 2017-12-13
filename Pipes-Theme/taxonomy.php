@@ -10,13 +10,47 @@
 		<div class="listof">
 	
 		<?php
-		if (is_tax( 'kategori', 'beer' ) || is_tax( 'typ')){
+
+		// ÖL TAXONOMY
+
+		// $term_id = 10;
+		// $taxonomy_name = 'products';
+		// $term_children = get_term_children( $term_id, $taxonomy_name );
+
+		if (is_tax( 'kategori', 'beer' ) || is_tax( 'typ' )){
 			$terms = get_terms(array(
 						'taxonomy' => 'typ',
 						'hide_empty' => true ));
 			?>
 			<ul class="typ">
 				<li><a href="/kategori/beer/">AllA</a></li>
+
+				<?php 
+					foreach ($terms as $value) { ?>
+			 		<li><a href="/typ/<?php echo $value->slug ?>">
+			 		<?php echo $value->name ?>
+					 </a></li>
+				
+
+				<?php };
+				};?> 
+
+
+			</ul>
+			
+
+
+
+
+			<?php
+			// DRYCK TAXONOMY
+		if (is_tax( 'kategori', 'dryck' ) || is_tax( 'typ')){
+			$terms = get_terms(array(
+						'taxonomy' => 'typ',
+						'hide_empty' => true ));
+			?>
+			<ul class="typ">
+				<li><a href="/kategori/dryck/">AllA</a></li>
 
 				
 				<?php 
@@ -28,7 +62,10 @@
 
 				<?php };
 				};?>
+
+				
 			</ul>
+
 		
 					<div id="col">
 			<?php if (have_posts()){
@@ -248,4 +285,4 @@
 				
 
 			</style>
-			}
+			

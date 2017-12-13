@@ -8,8 +8,8 @@
 		    <?php wp_nav_menu( array( 'theme_location' => 'extra-meny' ) );?>
 	    </nav>
 		<div class="listof">
-	
 		<?php
+
 
 		// ÖL TAXONOMY
 
@@ -17,17 +17,19 @@
 		// $taxonomy_name = 'products';
 		// $term_children = get_term_children( $term_id, $taxonomy_name );
 
-		if (is_tax( 'kategori', 'beer' ) || is_tax( 'typ' )){
+		if (is_tax( 'kategori', 'ol' ) ){
 			$terms = get_terms(array(
-						'taxonomy' => 'typ',
+						'taxonomy' => 'kategori',
+						'child_of' => '7',
 						'hide_empty' => true ));
+
 			?>
 			<ul class="typ">
-				<li><a href="/kategori/beer/">AllA</a></li>
+				<li><a href="/kategori/ol/">AllA</a></li>
 
 				<?php 
 					foreach ($terms as $value) { ?>
-			 		<li><a href="/typ/<?php echo $value->slug ?>">
+			 		<li><a href="/kategori/<?php echo $value->slug ?>">
 			 		<?php echo $value->name ?>
 					 </a></li>
 				
@@ -44,9 +46,10 @@
 
 			<?php
 			// DRYCK TAXONOMY
-		if (is_tax( 'kategori', 'dryck' ) || is_tax( 'typ')){
+		if (is_tax( 'kategori', 'dryck' ) ){
 			$terms = get_terms(array(
-						'taxonomy' => 'typ',
+						'taxonomy' => 'kategori',
+						'child_of' => '8',
 						'hide_empty' => true ));
 			?>
 			<ul class="typ">
@@ -55,7 +58,7 @@
 				
 				<?php 
 					foreach ($terms as $value) { ?>
-			 		<li><a href="/typ/<?php echo $value->slug ?>">
+			 		<li><a href="/kategori/<?php echo $value->slug ?>">
 			 		<?php echo $value->name ?>
 					 </a></li>
 				
@@ -92,7 +95,9 @@
 								<?php echo " <p>cl</p>"; ?>
 								<?php endif; ?>
 
-								<?php echo get_the_term_list( $post->ID, 'typ', ' ', ', ', '' ); ?> 
+ 								
+								<?php echo get_the_term_list( $post->ID, 'kategori', ' ', ', ', '' ); 
+								?> 
 
 							</li>
 						</div>

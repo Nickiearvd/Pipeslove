@@ -34,7 +34,7 @@
     </footer>
 
 <style>
-
+ 
 
 	#postcontent {
 		width:100%;

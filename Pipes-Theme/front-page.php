@@ -50,10 +50,7 @@
 
            </div>
           
-            <div id="instacontainer">
-               <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/48e76f3e71fa5640b28ed33a9fa77631.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
-
-            </div>
+        
        </div>
        
       </div>

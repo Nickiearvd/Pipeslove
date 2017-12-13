@@ -38,9 +38,23 @@
 							<li>
 								<?php echo "<h5>";the_title();echo "</h5>"; ?>
 
-								  <p> <?php the_field("pris"); 
-								 ?> kr</p><p> <?php the_field("volym"); 
-								 ?> cl</p>
+								<?php
+								$thecontent = get_the_content();
+								if(!empty($thecontent)) { ?>
+
+   								 <?php the_content(); ?>
+
+								<?php } ?> <br>
+
+								  <b><?php the_field("pris"); 
+								 ?> kr</b>
+
+								 <?php if( get_field('volym') ): ?>
+								 <?php the_field("volym"); 
+								 ?>
+								<?php echo " <p>cl</p>"; ?>
+								<?php endif; ?>
+
 								<?php echo get_the_term_list( $post->ID, 'typ', ' ', ', ', '' ); ?> 
 
 							</li>
@@ -70,6 +84,21 @@
 				display: inline;
 				color: #000;
 				font-weight: 300;
+				line-height: -5px;
+				margin:0;
+				padding: 0;
+			}
+
+			p {
+				line-height: 5px;
+			}
+
+			.s1 {
+				line-height: 5px;
+			}
+
+			.p1 {
+				line-height: 5px;
 			}
 
 			.border1 a {
@@ -102,6 +131,7 @@
 			
 				width:100%;
 				top:0;
+				min-height: 80vh;
 				z-index: 100;
 
 			}

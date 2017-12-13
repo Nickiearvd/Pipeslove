@@ -4,7 +4,7 @@
             <div class="c">
                 <div id="post">
                 	<div id="alltop">
-                    	<p> 
+                    	
                             <?php 
                                 if(have_posts()): 
                                     while ( have_posts()) : ?>
@@ -23,7 +23,7 @@
                                    <?php endwhile; 
                                 endif; 
                             ?>       
-                       </p>
+                      
                 </div>
            </div>
         </div>
@@ -43,7 +43,7 @@
 		box-sizing: border-box;
 		padding-top: 0px;
 		padding-bottom: 30px;
-		margin-bottom: 30px;
+		margin-bottom: 0px;
 		overflow: hidden;
 	}
 

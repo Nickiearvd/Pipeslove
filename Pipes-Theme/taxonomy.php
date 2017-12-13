@@ -17,6 +17,8 @@
 			?>
 			<ul class="typ">
 				<li><a href="/kategori/beer/">AllA</a></li>
+
+				
 				<?php 
 					foreach ($terms as $value) { ?>
 			 		<li><a href="/typ/<?php echo $value->slug ?>">
@@ -28,13 +30,13 @@
 				};?>
 			</ul>
 		
-					
+					<div id="col">
 			<?php if (have_posts()){
 				while (have_posts()) : the_post();?>
 					<ul class='imggrid'>
 						<div class="border1">
 							<li>
-								<?php echo "<h3>";the_title();echo "</h3>"; ?>
+								<?php echo "<h5>";the_title();echo "</h5>"; ?>
 
 								  <p> <?php the_field("pris"); 
 								 ?> kr</p><p> <?php the_field("volym"); 
@@ -45,6 +47,7 @@
 						</div>
 					</ul>
 				<?php endwhile; }?>
+			</div>
 		</div>
 	</div>
 </div>
@@ -56,6 +59,40 @@
 			html{
 				position:relative;
 			}
+
+			h5 {
+				font-size: 18px;
+				margin-bottom: -5px;
+				margin-top: 0px;
+			}
+
+			.border1 p {
+				display: inline;
+				color: #000;
+				font-weight: 300;
+			}
+
+			.border1 a {
+				color: #000;
+				font-weight: 300;
+			}
+
+			.border1 {
+				margin-bottom: 10px;
+				-webkit-column-break-inside: avoid;
+          		page-break-inside: avoid;
+               break-inside: avoid;
+			}
+
+			#col {
+				-webkit-columns: 100px 1; /* Chrome, Safari, Opera */
+    			-moz-columns: 100px 1; /* Firefox */
+    			columns: 100px 1;
+    			margin-top: 40px;
+    			max-width: 900px;
+    			margin:auto;
+			}
+
 			.c{
 				padding-top: 160px;
 				padding-bottom: 140px;
@@ -130,7 +167,7 @@
 					font-weight: 200;
 					margin-top: 0;
 					background-color: rgba(0, 0, 0, 0.9);
-					text-align: left;
+					text-align: center;
 					padding-left: 10px;
 					
 				}
@@ -166,7 +203,19 @@
 					padding-bottom:60px;
 				}
 
+
+			}
+
+			@media (min-width:600px) {
+				#col {
+				-webkit-columns: 100px 2; /* Chrome, Safari, Opera */
+    			-moz-columns: 100px 2; /* Firefox */
+    			columns: 100px 2;
+    			
+			}
+
 			}
 				
 
 			</style>
+			}

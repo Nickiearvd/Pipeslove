@@ -17,13 +17,15 @@
 		// $taxonomy_name = 'products';
 		// $term_children = get_term_children( $term_id, $taxonomy_name );
 
-		if (is_tax( 'kategori', 'ol' ) ){
+		if ((is_tax( 'kategori', 'ol' )||(is_tax( 'kategori', 'ale' ))||(is_tax( 'kategori', 'fatol' ))||(is_tax( 'kategori', 'gose' ))||(is_tax( 'kategori', 'ipa' ))||(is_tax( 'kategori', 'lager' ))||(is_tax( 'kategori', 'stout' ))||(is_tax( 'kategori', 'surol' ))) ){
 			$terms = get_terms(array(
 						'taxonomy' => 'kategori',
 						'child_of' => '7',
-						'hide_empty' => true ));
-
+						'hide_empty' => true,
+						'orderby'=>'title',
+						'order'=>'ASC' ));
 			?>
+
 			<ul class="typ">
 				<li><a href="/kategori/ol/">AllA</a></li>
 
@@ -46,11 +48,12 @@
 
 			<?php
 			// DRYCK TAXONOMY
-		if (is_tax( 'kategori', 'dryck' ) ){
+		if (is_tax( 'kategori', 'dryck' )||(is_tax( 'kategori', 'drink' ))||(is_tax( 'kategori', 'cider' )) ){
 			$terms = get_terms(array(
 						'taxonomy' => 'kategori',
 						'child_of' => '8',
-						'hide_empty' => true ));
+						'hide_empty' => true,
+						'orderby ' => 'name'));
 			?>
 			<ul class="typ">
 				<li><a href="/kategori/dryck/">AllA</a></li>
@@ -65,12 +68,11 @@
 
 				<?php };
 				};?>
-
 				
 			</ul>
-
 		
 					<div id="col">
+				
 			<?php if (have_posts()){
 				while (have_posts()) : the_post();?>
 					<ul class='imggrid'>
@@ -96,8 +98,12 @@
 								<?php endif; ?>
 
  								
-								<?php echo get_the_term_list( $post->ID, 'kategori', ' ', ', ', '' ); 
-								?> 
+								<?php if (is_tax( 'kategori', 'mat' )){
+									get_the_term_list( $post->ID, 'kategori', ' ', ', ', '' );
+								} else{
+									echo get_the_term_list( $post->ID, 'kategori', ' ', ', ', '' );
+
+								};?>
 
 							</li>
 						</div>
